@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>19_2075cProWebT2Ejercicio6CorreaJose</title>
+<style>
+	h2{
+    color: white;
+    background-color: green;
+    padding: 7px;
+}
+
+div.ex1{
+    width: 500px;
+    margin: auto;
+    border: 3px solid #73AD21;
+}
+
+div  .ex0{
+    color: green;
+}
+div.ex2{
+    max-width: 500px;
+    margin: auto;
+    border: 3px solid #73AD21;
+}
+div.static{
+    position: static;
+   
+    border: 3px solid blue;
+}
+
+div.relative{
+    position: relative;
+    left: 60px;
+     border: 3px solid #73AD21;
+}
+
+div.fixed{
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 300px;
+    border: 3px solid #73AD21";
+
+}
+
+div.relative2{
+    position: relative;
+    left: 50px;
+    width: 400px;
+    height: 200px;
+    border: 3px solid rgb(255, 217, 1);
+}
+
+div.absolute{
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid red;
+}
+
+div.sticky{
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    padding: 5px;
+    background-color: #cae8ca;
+    border: 2px solid #73AD21;
+}
+img{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+}
+</style>
+</head>
+<body>
+	<h1>19_2075cProWebT2Ejercicio6CorreaJose</h1>
+	<!--  -->
+	<h2>CSS Layout - width and max-width</h2>
+	<hr>
+	<p>As mentioned in the previous chapter; a block-level element always takes up the full width available (stretches out to the left and right as far as it can).</p>
+	<p>Setting the width of a block-level element will prevent it from stretching out to the edges of its container. Then, you can set the margins to auto, to horizontally center the element within its container. The element will take up the specified width, and the remaining space will be split equally between the two margins</p>
+	<p>Note: The problem with the &lt;div&gt; above occurs when the browser window is smaller than the width of the element. The browser then adds a horizontal scrollbar to the page.</p>
+
+	<p class="ex0">Using max-width instead, in this situation, will improve the browser's handing of small windows</p>
+	<p>this is important when making site usable on small devices:</p>
+
+	<div class="ex1">This div element has width: <span> 500px;</span></div>
+
+	<div>
+		<p>this div element
+			<b class="ex0"> has width: <span>500px;</span></b></p>
+	</div>
+
+	<br>
+	<div class="ex2">This div element has max-width: 500px;</div>
+	<p><strong>Tip:</strong> Drag the browser window to smaller than 500px wide, to see the difference between the two divs!</p>
+	
+	<h2>position: static;</h2>
+	<hr>
+	<p>An element with position: static; is not positioned in any special way; it is always positioned according to the normal flow of the page:</p>
+	<div class="static">this div element position: static; This div element has position: static; </div>
+	<h2>position: relative;</h2>
+	<hr>
+	<p>An element with position: relative; is positioned relative to its normal position:</p>
+	
+	<div class="relative"> This div element has position: relative;</div>
+
+
+	<h2>position: fixed;</h2>
+	<hr>
+	<p>An element with position: fixed; is positioned relative to the viewport, which means it always stays in the same place even if the page is scrolled:</p>
+
+	<div class="fixed">This div has position: FIXED;</div>
+	
+
+	<h2>position: absolute;</h2>
+	<hr>
+	<p>An element with position: absolute; is positioned relative to the nearest positioned ancestor (instead of positioned relative to the viewport, like fixed):</p>
+	
+	<div class="relative2">
+	<div class="absolute">This div element has position: absolute: </div>
+	</div>
+
+
+	<h2>position: sticky;</h2>
+	<p>Try to <b>scroll</b> inside this frame to understand how sticky positioning works.</p>
+	<p>Note: IE/Edge 15 and earlier versions do not support sticky position.</p>
+
+	<div class="sticky">I am sticky!</div>
+
+	<div style="padding-bottom:800px">
+	<p>In this example, the sticky element sticks to the top of the page (top: 0), when you reach its scroll position.</p>
+	<p>Scroll back up to remove the stickyness.</p>
+	<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+	</div>
+
+	<p>Some text to enable scrolling.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+	
+
+	<div>
+		<h2>Overlapping Elements</h2>
+	<hr>
+	<h1>This is a heading</h1>
+	<img src="img46.jpg" width="400px">
+	<img src="img46.jpg" width="200px">
+	<p>Because the image has a z-index of -1, it will be placed behind the text.</p> 
+	</div>
+		
+	
+	
+
+	
+</body>
+</html>

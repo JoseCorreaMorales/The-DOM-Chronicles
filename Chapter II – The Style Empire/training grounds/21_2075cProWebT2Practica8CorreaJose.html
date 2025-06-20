@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html>
+
+<head><title>21_2075cProWebT2Practica8CorreaJose</title>
+    <link rel="stylesheet" href="Estilos8.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>21_2075cProWebT2Practica8CorreaJose</h1>
+        </div>
+
+        <div id="content">
+            <div id="section">
+                <h2>Formularios HTML</h2>
+                <hr>
+                <p>El elemento HTML &lt;form&gt; define un formulario que se utiliza para recopilar la entrada del usuario:</p>
+
+                <pre>
+                &lt;form&gt;
+                .
+                &lt;/form&gt;
+            </pre>
+
+                <p>Un formulario HTML contiene elementos de formulario</p>
+                <p>Los elementos de formulario son diferentes tipos de elementos de entrada, como campos de texto, casillas de verificación, botones de opción, botones de envío y más.</p>
+
+                <h2>El elemento &lt;input&gt;</h2>
+                <hr>
+
+                <p>El elemento &lt;input &gt; es el elemento de formulario más importante</p>
+                <p>El elemento &lt;input&gt; se puede mostrar de varias formas, dependiendo del atributo de tipo</p>
+
+                <h2>Entrada de texto</h2>
+                <hr>
+                <p>&lt; input type="text"&gt;define un campo de entrada de una línea para la siguiente entrada:</p>
+
+                <pre>
+                &lt;form&gt;
+                Nombre:
+                &lt; input type="text" name="firstname"&gt;
+                Apellido:
+                &lt; input type="text" name="lastname"&gt;
+                &lt;/form&gt;
+            </pre>
+
+                <p>Ejemplo</p>
+                <form>
+                    Nombre:
+                    <input type="text" name="fristname">
+                    Apellido:
+                    <input type="text" name="lastname">
+                </form>
+
+                <h2>Entrada de radio</h2>
+                <hr>
+
+                <p>&lt;input type="radio"&gt; define un botón de radio</p>
+                <p>Los botones de opción permiten al usuario seleccionar UNA de un número limitado de opciones:</p>
+
+                <pre>
+                &lt; form&gt;
+&lt; input type="radio" name="gender" value="male"&gt; Masculino &lt;br&gt; 
+
+&lt; input type="radio" name="gender" value="female"&gt;Femenino &lt;br&gt;
+
+&lt; input type="radio" name="gender" value="other"&gt;Otro
+&lt;/form&gt;
+            </pre>
+
+                <p>Ejemplo</p>
+                <form>
+                    <input type="radio" name="gender" value="male">Masculino <br>
+                    <input type="radio" name="gender" value="female">Femenino <br>
+                    <input type="radio" name="gender" value="other">Otro <br>
+                </form>
+
+                <h2>El botón de enviar</h2>
+                <hr>
+                <p>&lt; input type="submt"&gt; define un formulario de botón que envía los datos del formulario a un controlador de formularios</p>
+
+                <p>El controlador de formulario se especifica en el atributo de acción del formulario: </p>
+
+                <pre>
+            &lt; form action="/action_page.php"&gt;
+            Nombre: &lt; br&gt;
+            &lt;input type="text"  name="fristname" value="Mickey"&gt;&lt;br&gt;
+
+            Apellido:&lt; br&gt;
+            &lt;input type="text" name="lastname" value="Mouse"&gt;&lt;br&gt;&lt;br&gt;
+
+            &lt;input type="submit" value="Submit"&gt;
+            &lt;/form&gt;
+                 </pre>
+
+                <p>Ejemplo:</p>
+                <form action="/action_page.php">
+                   Nombre: <br>
+
+                    <input type="text" name="fristname"value="Mickey"> <br>
+
+                   Apellido: <br>
+
+                    <input type="text" name="lastname" value="Mouse"><br><br>
+
+                    <input type="submit" name="Enter" >
+                </form>
+
+                <h2>El atributo de acción</h2>
+                <hr>
+                <p>El atributo de acción define la acción que se realizará cuando se envíe el formulario.</p>
+                <p>Normalmente, los datos del formulario se envían a una página web en el servidor cuando el usuario hace clic en el botón enviar
+                </p>
+
+                <p>En el ejemplo anterior, los datos del formulario se envían a una web en el servidor llamado "/action_page.php".
+                    La página contiene un script del lado del servidor que maneja los datos del formulario.:</p>
+
+                <pre>
+                    &lt;form action="/action_page.php"&gt;
+                </pre>
+                <h2>El atributo de destino</h2>
+                <hr>
+                <p>El atributo de destino especifica si el resultado enviado se abrirá en una nueva pestaña del navegador, o en el
+                    ventana actual</p>
+
+                <p>El valor predeterminado es "_self", lo que significa que el formulario se enviará en la ventana actual..</p>
+
+                <p>Para que el resultado del formulario se abra en una nueva pestaña del navegador, use el valor "_blank":</p>
+
+                <pre>
+                    &lt;form action="/action_page.php"&gt;
+                </pre>
+
+                <h2>El atributo del método</h2>
+                <hr>
+                <p>El atributo de método especifica el método HTTP (GET o POST) que se utilizará al enviar los datos del formulario:</p>
+                <pre>
+                    &lt;form action="/action_page.php" method="get"&gt;
+                    <p>or</p>
+                    &gt; form action="/action_page.php" method="post"&gt;
+                </pre>
+
+                <h2>¿Cuándo usar GET?</h2>
+                <hr>
+                <p>El método predeterminado al enviar los datos del formulario es GET</p>
+                <P>Sin embargo. cuando se utiliza GET, los datos del formulario de envío serán visibles en el campo de dirección de la página:</P>
+                <pre>/action_page.php?fristname=Mickey&lastname=Mouse</pre>
+                <p>Notas sobre GET:</p>
+
+                <ul>
+                    <li> Agrega datos de formulario en URL es pares de nombre / valor </li>
+                    <li> La longitud de una URL es limitada (aproximadamente 3000 caracteres) </li>
+                    <li> ¡Nunca use GET, así que envíe datos confidenciales! (será visible en la URL) </li>
+                    <li> Útil para envíos de formularios en los que un usuario desea marcar el resultado como favorito </li>
+                    <li> GET es mejor para datos no seguros, como cadenas de consulta en google </li>
+                </ul>
+
+                <h2> ¿Cuándo usar POST? </h2>
+                <HR>
+                </HR>
+                <p> Utilice siempre POST si los datos del formulario contienen información confidencial o personal. El método POST no
+                    mostrar los datos del formulario enviado en el campo de dirección de la página </p>
+                <p></p>
+                <ul>
+
+                    <li> POST no tiene limitaciones de tamaño y se puede usar para enviar grandes cantidades de datos </li>
+                    <li> Para envíos con POST que no se pueden agregar a favoritos </li>
+                </ul>
+
+                <h2>El atributo de nombre</h2>
+                <hr>
+                <p> Cada campo de entrada debe tener un atributo de nombre para ser enviado </p>
+                <p> Si se omite el atributte de nombre, los datos de ese campo de entrada no se enviarán en absoluto </p>
+                <p> Este ejemplo solo enviará el campo de entrada "apellido": </p>
+                <pre>
+            &lt;form action="/action_page.php"&gt;
+            NOmbre: &lt;br&gt;
+            &lt;input type="text" name="lastname" value="Mickey"&gt; &lt;br&gt;
+                      
+            Apellido:&lt;br&gt;
+            &lt;input type="text" name="lastname" value="Mouse"&gt; &lt;br&gt;&lt;br&gt;
+
+            &lt;input type="submit" value="Submit"&gt;
+            &lt;/form&gt;
+                   </pre>
+
+                <p>Ejemplo</p>
+                <form action="078ProWebT2Ejercicio5CorreaJose.php">
+                   Nombre: <br>
+                    <input type="text" name="nombre" value="Mickey"><br>
+                    Apellido: <br>
+                    <input type="text" name="apellido" value="Mouse"><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+
+                <pre>
+                       &lt;?php echo %POST["nombre"]; ?&gt;
+                   </pre>
+
+            </div>
+            <!--  -->
+            <div id="sidebar">
+                <h2 class="conclusions">Conclusiones particulares</h2>
+                <ul>
+                    <li>El atributo name especifica un nombre para el elemento.</li>
+                    <li>El valor del atributo name debe ser el mismo cuando se esta usando botones radio, de no ser asi se podra seleccionar más de una opcción y no tendria sentido</li>
+                    <li><b>id:</b> es un identificador unico para cualquier etiqueta html. <b>name:</b> es un identificador (no necesariamente unico) para los elementos de formulario.</li>
+                    <li>El atributo value permite establecer el valor inicial de un control</li>
+                </ul>
+                <hr>
+            </div>
+            <!--  -->
+        </div>
+
+        <div id="footer">
+            <h2>Instituto Tecnológico Superior de Cuidad Hidalgo</h2>
+            <p><b>Semestre </b> Agosto Diciembre 2021</p>
+            <p><b>Materia </b> Programación Web</p>
+            <p><b>Grupo </b>075c</p>
+            <p><b>Profesor </b>Erik Augusto Ramirez Vargas</p>
+            <p><b>Alumno </b>Jose Correa Morales</p>
+        </div>
+    </div>
+</body>
+
+</html>

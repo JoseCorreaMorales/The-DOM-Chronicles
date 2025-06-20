@@ -1,0 +1,19 @@
+h2{
+    color: white;
+    background-color: green;
+    padding: 7px;
+}
+
+img{
+    width: 50%;
+}
+
+body{
+    background-image:  url('fondo.jpg');
+    background-repeat: no-repeat;
+    background-repeat: repeat-x;
+}
+
+body{
+    background-repeat: repeat-y;
+}

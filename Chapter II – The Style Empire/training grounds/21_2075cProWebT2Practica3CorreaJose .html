@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html><head><title>21_2075cProWebT2Practica3CorreaJose</title>
+	<style>
+		body {
+			background-color: rgb(35, 189, 21);
+		}
+		h1 {
+			color: rgb(255, 255, 255);
+		}
+		h2 {
+			color: white;
+			background-color: green;
+			padding: 7px;
+		}
+		p {
+			color: rgb(30, 255, 0);
+		}
+		p {
+			background-color: rgb(0, 0, 0);
+			border: 10px solid rgb(0, 88, 4);
+			padding: 30px;
+		}
+		#id_01 {
+			color: rgb(226, 192, 0)
+		}
+		.error {
+			color: rgb(65, 65, 65);
+		}
+		span.error2 {
+			color: rgb(255, 0, 0);
+		}
+	</style>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<h1>21_2075cProWebT2Ejercicio3CorreaJose</h1>
+	<hr>
+	<h2>Estilos HTML - CSS</h2>
+	<hr>
+	<p>CSS puede ser agredado a elementos HTML por 3 maneras:</p>
+	<ul>
+		<li>En línea -mediante el uso del atributo de estilo en elementos HTML</li>
+		<li>Interno - mediante un elemento <b>style</b> en la sección de la <b>cabezera</b></li>
+		<li>Externo - mediante un archivo CSS externo</li>
+	</ul>
+
+	<h2>CSS en línea</h2>
+	<hr>
+	<p>Se utiliza un CSS en línea para aplicar un estilo único a un solo elemento HTML.</p>
+	<pre>h1 style="color:green"</pre>
+	<h1 style="color: blue;">Este es un titulo azul</h1>
+	<!-- Practice -->
+	<h1 style="color: brown;">Este es un a titilo cafe</h1>
+	<h1 style="color: yellow;">Este es un titulo amarillo</h1>
+
+	<h2>CSS interno</h2>
+	<hr>
+	<p>Un CSS interno es usado para definir un estilo para una sola página HTML.</p>
+	<h1>Este es un titulo</h1>
+	<p>Este es un parrafo.</p>
+
+	<pre>
+	&lt;style&gt;
+			body {background-color: powderpink;}
+			h1   {color: blue;}
+			p    {color: lightred;}
+	&lt;/style&gt;
+	</pre>
+
+	<h2>CSS externo</h2>
+	<hr>
+	<p>Se utiliza una hoja de estilo externa para definir el estilo de muchas páginas HTML..</p>
+	<p>Con una hoja de estilo externa, puede cambiar el aspecto de un sitio web completo, ¡cambiando un archivo!</p>
+	<p>Para utilizar una hoja de estilo externa, agréguele un vínculo en la sección de la pagina HTML: <b> head</b></p>
+	<pre>&lt;link rel="stylesheet" href="styles.css"&gt;</pre>
+
+	<h2>Fuentes CSS</h2>
+	<hr>
+	<p>La propiedad de color CSS define el color del texto que se utilizará.</p>
+	<p>La propiedad CSS font-family define la fuente que se utilizará.</p>
+	<p>La propiedad de text-size de CSS define el tamaño del texto que se utilizará.</p>
+
+	<pre>
+		h2{
+			color:blue;
+			font-family: verdana;
+			font-size: 300%;
+		}
+		p{
+			color:red;
+			font-family: verdana;
+			font-size: 300%;
+		}
+	</pre>
+
+	<h2>Bordes CSS</h2>
+	<hr>
+	<p>La propiedad de borde CSS define un borde alrededor de un elemento HTML</p>
+	<pre>
+	p{
+			border: 1px solid powderblue;
+	}
+	</pre>
+
+	<!-- <hr> -->
+	<h2>CSS Padding - relleno (espacio)</h2>
+	<hr>
+	<p>La propiedad de padding CSS define un relleno (espacio) entre el texto y el borde.</p>
+	<pre>
+	p {
+			border: 1px solid powderblue;
+			padding: 30px;
+	}
+	</pre>
+	<h2>Margen CSS</h2>
+	<hr>
+	<p>La propiedad de margin CSS define un margen (espacio) fuera del borde</p>
+	<pre>
+	p {
+			border: 1px solid powderblue;
+			margin: 50px;
+	}
+	</pre>
+	<h2>El atributo id</h2>
+	<hr>
+	<p>Para definir un estilo específico para un elemento especial, agregue un atributo id al elemento</p>
+	<p id="id_01">Yo soy diferente</p>
+	<pre>
+	#p01 {
+    		color: blue;
+	}
+	</pre>
+	<h2>El atributo de la clase</h2>
+	<hr>
+	<p>Para definir un estilo para un tipo especial de elementos, agregue un atributo de clase al elemento:</p>
+
+	<p class="error">
+		Yo
+		 <span>soy </span>
+		<span class="error2">diferente</span>
+	</p>
+	
+	<pre>
+	span.error {
+
+   		color: yellow;
+	}
+	</pre>
+</body>
+
+</html>

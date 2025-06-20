@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>19_2075cProWebT2Practica4CorreaJose</title>
+	<link rel="stylesheet" href="">
+</head>
+<link rel="stylesheet" href="19_2075cProWebT2Ejercicio4CorreaJose.css">
+<body>
+	<h1>19_2075cProWebT2Practica4CorreaJose</h1>
+	<h2> Imagenes HTML</h2><hr>
+	<h2> Sitaxis de imagenes HTML</h2>
+	<hr>
+	<p>En HTML las imagenes estan definidas con la etiqueta - img -</p>
+	<p>La etiqueta - img - esta vacia, esta solo continene atributos, y no tiene etiqueta de cierre.</p>
+	<p>El atributo SRC especifica la URL (direccion web) de la imagen:</p>
+	<p>img src="url"</p>
+
+	<h2>El atributo alt</h2>
+	<hr>
+	<p>El atributo alt provee un texto alternativo a la imagen, si el usuario por alguna razon no pude verla (debido a conexion 
+        lenta, un error en el atributo src,o si el usuario usa un lector de pantalla).</p>
+	<p>El valor del atributo alt deberia describir la imagen:</p>
+	<img src="img40.jpg" alt="Old House">
+	<p>Si un navegador no pude encontrar la imagen, mostrará el texto alternativo:</p>
+	<img src="chania.gif" alt="Flowers in Chania">
+
+	<h2>Tamaño de imagen - ancho y alto</h2>
+	<hr>
+	<p>Puedes usar el atributo style para  especificar la anchura y altura de la imagen.</p>
+	<img src="img42.jpg" alt="cuchillo" style="width: 300px; height: 300px;">
+	<img src="img42.jpg" alt="cuchillo" style="width: 300px;">
+	<p>Alternativamente, puedes usar los atributos de ancho y alto:</p>
+	<img src="img42.jpg" alt="Chica en una chaqueta" height="100px" width="100px">
+
+	<h2>ancho y alto, o estilo?</h2>
+	<hr>
+	<p>ambos ancho y alto, y  atributo el atributo style son validos en HTML5.</p>
+	<p>Sin embargo, sugerimos usar el atributo style. Evita que las hojas de estilos cambien el tamaño de las imágenes.:</p>
+	<pre>
+	&lt; style &gt;
+		img {
+		width:100%;
+		}
+        &lt; /style &gt;
+	</pre>
+	<p>La imagen a continuación tiene el atributo de ancho establecido en 128 píxeles, pero la hoja de estilo lo anula y establece el ancho en
+        100%.</p>
+	<img src="img43.jpg" alt=" icono HTML5" width="128" height="128">
+	<p>La imagen a continuación usa el atributo de estilo, donde el ancho se establece en 128 píxeles, lo que anula la hoja de estilo:
+	</p>
+	<img src="img43.jpg" alt="icono HTML5" style="width: 128px; height: 128px;">
+
+	<h2>Imágenes en otra carpeta</h2>
+	<hr>
+	<p>Si no se especifica, el navegador espera encontrar la imagen en la misma carpeta que la página web.</p>
+	<p> Sin embargo, es común almacenar imágenes en una subcarpeta. Luego debe incluir el nombre de la carpeta en el src
+        atributo:</p>
+	<img src="images/img44.jpg" alt="en otra subcarpeta" style="width: 300px;">
+
+	<h2>Imagenes en otro servidor</h2>
+	<hr>
+	<p>Algunos sitios web almacenan sus imágenes en servidores de imágenes..</p>
+	<p> De hecho, puede acceder a las imágenes desde cualquier dirección web del mundo:</p>
+	<!--<img src="http://itsch.edu.mx/assets/images/header.png" alt="W3School.com">-->
+<img src="https://www.cdhidalgo.tecnm.mx/images/itsch.jpg" style="width: 300px; height: 300px" alt="W3School.com">
+
+	<h2>Imagenes animadas</h2>
+	<hr>
+	<p>HTML permite GIF animados:</p>
+	<img src="img41.gif" alt="zanahoria" style="width: 200px;">
+
+	<h2>imagen como vinculo</h2>
+	<hr>
+    <p> Para usar una imagen como vínculo, coloque la etiqueta &lt;img&gt; dentro de la etiqueta &lt;a&gt;:</p>
+	<a href="https://itsch.edu.mx" target="_blank"><img src="img45.png" alt="HTML tutorial"
+			style="width: 200px; height: 200px; border: 0;"></a>
+
+
+
+	<h2>Imagen flotante</h2>
+	<hr>
+	<p>Utilice la propiedad flotante de CSS para dejar que la imagen flote a la derecha oa la izquierda de un texto:</p>
+
+	<p><strong>Flota la imagen a la derecha:</strong></p>
+	<p> <img src="img43.jpg" alt="cara sonriente" style="float: right; width: 42px; height: 42px;">Un párrafo con un
+        imagen flotante. Un párrafo con una imagen flotante flotante. Un párrafo con una imagen flotante.</p>
+
+	<p><strong>Flota la imagen a la izquierda:</strong></p>
+	<p> <img src="img43.jpg" alt="cara sonriente" style="
+		float: left;
+		width: 42px;
+		height: 42px;
+		border: 2px solid yellow;
+		padding: 50px 30px 10px 150px;
+		margin: 10px 0px 15px 30px;">
+		Un párrafo con una imagen flotante. Un párrafo con una imagen flotante. Un párrafo con una imagen flotante.</p>
+	<p>Utilice la propiedad flotante de CSS. El atributo de alineación está obsoleto en HTML 4 y no es compatible con HTML5.</p>
+
+	<p> <img src="img43.jpg" alt="Smiley face" style="
+			float: left;
+			width: 42px;
+			height: 42px;
+			border: 2px solid yellow;
+			margin: 30px 30px 30px 30px;">
+		Un párrafo con una imagen flotante. Un párrafo con una imagen flotante. Un párrafo con una imagen flotante..</p>
+	<p>Utilice la propiedad flotante de CSS. El atributo de alineación está obsoleto en HTML 4 y no es compatible con HTML5.</p>
+	<!--  -->
+
+	<h2>Mapas de imagenes</h2>
+	<hr>
+	<p>Usa la etiqueta &lt;map&gt; para definir un mapa de imágenes. Un mapa de imagen es una imagen con áreas en las que se puede hacer clic.</p>
+	<p>En la imagen a continuación, haga clic en la computadora, el teléfono o la taza de café:</p>
+	<p>Haga clic en la computadora, el teléfono o la taza de café para ir a una nueva página y leer más sobre el tema:</p>
+	<img src="img47.jpg" alt="worklace" usemap="#workmap" width="400" height="379">
+	<map name="workmap">
+		<area shape="rect" coords="10, 0, 50, 100" href="19_2075cProWebT3Ejercicio1CorreaJose.html" alt="computer"
+			title="hola">
+		<area shape="rect" coords="290, 172, 333, 250" href="19_2075cProWebT3Ejercicio2CorreaJose.html" alt="Phone">
+		<area shape="circe" coords="337, 330, 44" href="19_2075cProWebT3Ejercicio3CorreaJose.html" alt="Cup of coffe">
+		<area shape="circe" coords="125,30,25" href="Star" alt="https:///itsch.edu.mx" title="itsch" target="_blank">
+	</map>
+
+	<h2>imagen de fondo</h2>
+	<hr>
+	<p>Para agregar una imagen de fondo en un elemento HTML, use la propiedad CSS background-image:</p>
+	<pre>
+	&lt;body style="background-image:url('img48.jpg');"&gt;</pre>
+
+
+</body>
+
+</html>

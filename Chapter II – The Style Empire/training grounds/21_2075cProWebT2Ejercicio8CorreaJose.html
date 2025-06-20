@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html>
+
+<head><title>21_2075cProWebT2Ejercicio8CorreaJose</title>
+    <link rel="stylesheet" href="Estilos8.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>21_2075cProWebT2Ejercicio8CorreaJose</h1>
+        </div>
+
+        <div id="content">
+            <div id="section">
+                <h2>HTML Forms</h2>
+                <hr>
+                <p>The HTML &lt;form&gt; element defines a form that is used to collect user input:</p>
+
+                <pre>
+                &lt;form&gt;
+                .
+                &lt;/form&gt;
+            </pre>
+
+                <p>A HTML form contains form elements</p>
+                <p>Form elements are different types of input elements, like text fields, checkboxes, radio buttons,
+                    submit buttons, and more</p>
+
+                <h2>The &lt;input&gt; element</h2>
+                <hr>
+
+                <p>The &lt;input &gt; element is the most important form element</p>
+                <p>The &lt;input&gt; element can be displayed is several ways, depending on the type attribute</p>
+
+                <h2>Text input</h2>
+                <hr>
+                <p>&lt; input type="text"&gt;defines a one-line input field for next input:</p>
+
+                <pre>
+                &lt;form&gt;
+                First name:
+                &lt; input type="text" name="firstname"&gt;
+                last name:
+                &lt; input type="text" name="lastname"&gt;
+                &lt;/form&gt;
+            </pre>
+
+                <p>Example</p>
+                <form>
+                    Frist name:
+                    <input type="text" name="fristname">
+                    last name:
+                    <input type="text" name="lastname">
+                </form>
+
+                <h2>Radio input</h2>
+                <hr>
+
+                <p>&lt;input type="radio"&gt; defines a radio button</p>
+                <p>Radio buttons let a user select ONE of a limited number of choices:</p>
+
+                <pre>
+                &lt; form&gt;
+&lt; input type="radio" name="gender" value="male"&gt; Male &lt;br&gt; 
+
+&lt; input type="radio" name="gender" value="female"&gt;Female &lt;br&gt;
+
+&lt; input type="radio" name="gender" value="other"&gt;other
+&lt;/form&gt;
+            </pre>
+
+                <p>Example</p>
+                <form>
+                    <input type="radio" name="gender" value="male">Male <br>
+                    <input type="radio" name="gender" value="female">Female <br>
+                    <input type="radio" name="gender" value="other">Other <br>
+                </form>
+
+                <h2>The submit button</h2>
+                <hr>
+                <p>&lt; input type="submt"&gt; defines a button from submitting the form data to a form-handler</p>
+
+                <p>The form-handler is specified in the form's action attribute: </p>
+
+                <pre>
+            &lt; form action="/action_page.php"&gt;
+            Frist name: &lt; br&gt;
+            &lt;input type="text"  name="fristname" value="Mickey"&gt;&lt;br&gt;
+
+            last name:&lt; br&gt;
+            &lt;input type="text" name="lastname" value="Mouse"&gt;&lt;br&gt;&lt;br&gt;
+
+            &lt;input type="submit" value="Submit"&gt;
+            &lt;/form&gt;
+                 </pre>
+
+                <p>Example:</p>
+                <form action="/action_page.php">
+                    Frist name: <br>
+
+                    <input type="text" name="fristname" id="Mickey"> <br>
+
+                    Last name: <br>
+
+                    <input type="text" name="lastname" id="Mouse"><br><br>
+
+                    <input type="submit" name="Enter" >
+                </form>
+
+                <h2>The action attribute</h2>
+                <hr>
+                <p>The action attribute defines the action to be performed when the form is submitted.</p>
+                <p>Normally, the form data is sent to a web page on the server when the user clicks on the submit button
+                </p>
+
+                <p>In the example above, the form data is sent to a web on the server called "/action_page.php".This
+                    page contains a server-side script that handles the form data:</p>
+
+                <pre>
+                    &lt; form action="/action_page.php"&gt;
+                </pre>
+                <h2>The target attribute</h2>
+                <hr>
+                <p>The target attribute specifies if the submitted result will open in a new browser tab, or in the
+                    current window</p>
+
+                <p>The default value is "_self" which means the form will be submitted in the current window.</p>
+
+                <p>To make the form result open in a new browser tab, use the value "_blank":</p>
+
+                <pre>
+                    &lt;form action="/action_page.php"&gt;
+                </pre>
+
+                <h2>The method attribute</h2>
+                <hr>
+                <p>The method attribute specifies the HTTP method (GET or POST) to be used when submitting the form
+                    data:</p>
+                <pre>
+                    &lt;form action="/action_page.php" method="get"&gt;
+                    <p>or</p>
+                    &gt; form action="/action_page.php" method="post"&gt;
+                </pre>
+
+                <h2>When to use GET?</h2>
+                <hr>
+                <p>The default method when submitting form data is GET</p>
+                <P>However. when GET is used, the submitting form data will be visible in the page address field:</P>
+                <pre>/action_page.php?fristname=Mickey&lastname=Mouse</pre>
+                <p>Notes on GET:</p>
+
+                <ul>
+                    <li>Appends form-data into URL is name/value pairs </li>
+                    <li>The length of a URL is limited (about 3000 characters)</li>
+                    <li>Never use GET so send sensitive data! (will be visible in the URL)</li>
+                    <li>Useful for form submissions where a user want to bookmark the result</li>
+                    <li>GET is better for non-secure data, like query strings in google</li>
+                </ul>
+
+                <h2>When to use POST?</h2>
+                <HR>
+                </HR>
+                <p>Always use POST if the form data contains sensitive or personal information. The POST method does not
+                    display the submitted form data in the page address field</p>
+                <p></p>
+                <ul>
+
+                    <li>POST has no size limitations, and can be used to send large amounts of data</li>
+                    <li>For submissions with POST cannot bookmark</li>
+                </ul>
+
+                <h2>The name attribute</h2>
+                <hr>
+                <p>Each input field must have a name atributte to be submitted</p>
+                <p>If the name atributte is omitted, tha data of that input field will not be sent at all</p>
+                <p>This example wll only submit the "last name" input field:</p>
+
+                <pre>
+            &lt;form action="/action_page.php"&gt;
+            First name: &lt;br&gt;
+            &lt;input type="text" name="lastname" value="Mickey"&gt; &lt;br&gt;
+                      
+            Last name:&lt;br&gt;
+            &lt;input type="text" name="lastname" value="Mouse"&gt; &lt;br&gt;&lt;br&gt;
+
+            &lt;input type="submit" value="Submit"&gt;
+            &lt;/form&gt;
+                   </pre>
+
+                <p>example</p>
+                <form action="078ProWebT2Ejercicio5CorreaJose.php">
+                    First name: <br>
+                    <input type="text" name="nombre" value="Mickey"><br>
+                    Last name: <br>
+                    <input type="text" name="apellido" value="Mouse"><br><br>
+                    <input type="submit" value="Enviar">
+                </form>
+
+                <pre>
+                       &lt;?php echo %POST["nombre"]; ?&gt;
+                   </pre>
+
+            </div>
+            <!--  -->
+            <div id="sidebar">
+                <h2 class="conclusions">Particular Conclusions</h2>
+                <hr>
+                <ul>
+                    <li> The name attribute specifies a name for the element. </li>
+                     <li> The value of the name attribute must be the same when using radio buttons, otherwise it will be possible to select more than one option and it would not make sense </li>
+                     <li> <b> id: </b> is a unique identifier for any html tag. <b> name: </b> is an identifier (not necessarily unique) for the form elements. </li>
+                     <li> The value attribute allows you to set the initial value of a control </li>
+                </ul>
+            </div>
+            <!--  -->
+        </div>
+
+        <div id="footer">
+            <h2>Higher Technological Institute of Ciudad Hidalgo</h2>
+            <p><b>Semester </b> September-December 2021</p>
+            <p><b>Matter </b> Web programming</p>
+            <p><b>Group </b>075c</p>
+            <p><b>Professor </b>Erik Augusto Ramirez Vargas</p>
+            <p><b>Student </b>Jose Correa Morales</p>
+        </div>
+    </div>
+</body>
+
+</html> 

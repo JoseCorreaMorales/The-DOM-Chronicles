@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head><title>21_2075cProWebT2Ejercicio3CorreaJose</title>
+	<style>
+		body {
+			background-color: rgb(35, 189, 21);
+		}
+		h1 {
+			color: rgb(255, 255, 255);
+		}
+		h2 {
+			color: white;
+			background-color: green;
+			padding: 7px;
+		}
+		p {
+			color: rgb(30, 255, 0);
+		}
+		p {
+			background-color: rgb(0, 0, 0);
+			border: 10px solid rgb(0, 88, 4);
+			padding: 30px;
+		}
+		#id_01 {
+			color: rgb(226, 192, 0)
+		}
+		.error {
+			color: rgb(65, 65, 65);
+		}
+		span.error2 {
+			color: rgb(255, 0, 0);
+		}
+	</style>
+	<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+	<h1>21_2075cProWebT2Ejercicio3CorreaJose</h1>
+	<hr>
+	<h2>HTML Styles - CSS</h2>
+	<hr>
+	<p>CSS can be added to HTML elements in 3 ways:</p>
+	<ul>
+		<li>Inline - by using the style attribute in HTML elements</li>
+		<li>Internal - by using a <b>style</b> element in the <b>head</b> section</li>
+		<li>External - by using an external CSS file</li>
+	</ul>
+
+	<h2>Inline CSS</h2>
+	<hr>
+	<p>An inline CSS is used to apply a unique style to a single HTML element.</p>
+	<pre>h1 style="color:green"</pre>
+	<h1 style="color: blue;">This is a Blue Heading</h1>
+	<!-- Practice -->
+	<h1 style="color: brown;">This is a Brown Heading</h1>
+	<h1 style="color: yellow;">This is a Yellow Heading</h1>
+
+	<h2>Internal CSS</h2>
+	<hr>
+	<p>An internal CSS is used to define a style for a single HTML page.</p>
+	<h1>This is a heading</h1>
+	<p>This is a paragraph.</p>
+
+	<pre>
+	&lt;style&gt;
+			body {background-color: powderpink;}
+			h1   {color: blue;}
+			p    {color: lightred;}
+	&lt;/style&gt;
+	</pre>
+
+	<h2>External CSS</h2>
+	<hr>
+	<p>An external style sheet is used to define the style for many HTML pages.</p>
+	<p>With an external style sheet, you can change the look of an entire web site, by changing one file!</p>
+	<p>To use an external style sheet, add a link to it in the <b>head</b> section of the HTML page:</p>
+	<pre>&lt;link rel="stylesheet" href="styles.css"&gt;</pre>
+
+	<h2>CSS Fonts</h2>
+	<hr>
+	<p>The CSS color property defines the text color to be used.</p>
+	<p>The CSS font-family property defines the font to be used.</p>
+	<p>The CSS font-size property defines the text size to be used.</p>
+
+	<pre>
+		h2{
+			color:blue;
+			font-family: verdana;
+			font-size: 300%;
+		}
+		p{
+			color:red;
+			font-family: verdana;
+			font-size: 300%;
+		}
+	</pre>
+
+	<h2>CSS Border</h2>
+	<hr>
+	<p>The CSS border property defines a border around an HTML element</p>
+	<pre>
+	p{
+			border: 1px solid powderblue;
+	}
+	</pre>
+
+	<!-- <hr> -->
+	<h2>CSS Padding</h2>
+	<hr>
+	<p>The CSS padding property defines a padding (space) between the text and the border</p>
+	<pre>
+	p {
+			border: 1px solid powderblue;
+			padding: 30px;
+	}
+	</pre>
+	<h2>CSS Margin</h2>
+	<hr>
+	<p>The CSS margin property defines a margin (space) outside the border</p>
+	<pre>
+	p {
+			border: 1px solid powderblue;
+			margin: 50px;
+	}
+	</pre>
+	<h2>The id Attribute</h2>
+	<hr>
+	<p>To define a specific style for one special element, add an id attribute to the element</p>
+	<p id="id_01">I am different</p>
+	<pre>
+	#p01 {
+    		color: blue;
+	}
+	</pre>
+	<h2>The class Attribute</h2>
+	<hr>
+	<p>To define a style for a special type of elements, add a class attribute to the element:</p>
+
+	<p class="error">
+		I
+		 <span>am </span>
+		<span class="error2">different</span>
+	</p>
+
+	<pre>
+	span.error {
+
+   		color: yellow;
+	}
+	</pre>
+</body>
+
+</html>

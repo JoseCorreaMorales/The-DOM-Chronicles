@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head><title>21_2075cProWebT2Practica2CorreaJose</title>
+
+<style >
+  .colores{
+    background:HSL(0, 100%, 50%);
+  }
+</style>
+  </head>
+  <body>
+<h1>21_2075cProWebT2Practica2CorreaJose</h1>
+<h2 style="color: white; background: green">Valor HSL</h2><hr>
+<p>En HTML, un color puede ser especificado usando matiz, saturacion y luminosad (HSL) en la forma:</p>
+<p>hsl (matiz, saturación, Luminosidad)</p>
+<p>Matiz es un grado en la rueda de color desde 0 hasta 360 0 es rojo, 120 verde y 240 azul</p>
+<p>saturación es un valor porcentual, 0% significa una sombra de gris, y 100% es a todo color</p>
+<p>luminosad es tambien un porcentaje, 0% es negro, 50% no es blanco ni negro, 100%  es blanco</p>
+
+<h1 style="background-color: HSL(0, 100%, 50%)">HSL(0, 100%, 50%)</h1>
+<h1 style="background-color: HSL(240, 100%, 50%)">HSL(240, 100%, 50%)</h1>
+<h1 style="background-color: HSL(147, 50%, 47%)">HSL(147, 50%, 47%)</h1>
+<h1 style="background-color: HSL(248, 53%, 58%)"> HSL(248, 53%, 58%)</h1>
+
+<h2 style="color: white; background: green">Saturación</h2><hr>
+<p>La saturación puede ser descrita como intensidad de color</p>
+<p>100% es color puro, no tonos de gris</p>
+<p>50% es 50% gris, pero puedes ver aun el color</p>
+<p>0% es completamente gris, ya no puedes ver el color</p>
+
+<h1 style="background-color: HSL(123, 100%, 50%)">HSL(123, 100%, 50%)</h1>
+<h1 style="background-color: HSL(123, 80%, 50%)">HSL(123, 80%, 50%)</h1>
+<h1 style="background-color: HSL(123, 60%, 50%)">HSL(123, 60%, 50%)</h1>
+<h1 style="background-color: HSL(123, 40%, 50%)">HSL(123, 40%, 50%)</h1>
+<h1 style="background-color: HSL(123, 20%, 50%)">HSL(123, 20%, 50%)</h1>
+<h1 style="background-color: HSL(123, 0%, 50%)">HSL(123, 0%, 50%)</h1>
+
+<h2 style="color: white; background-color: green ">Luminosidad</h2><hr>
+<p>la luminosad de un color pueder ser descrito como cuanta luz quieres darle al color,
+donde 0% significa sin luz (negro), 50% significa 50% luz (ni oscuro ni claro)
+100%</p>
+<h1 style="background-color: HSL(0, 100%, 0%); color:#fff">HSL(0, 100%, 0%)</h1>
+<h1 style="background-color: HSL(0, 100%, 25%);">HSL(0, 25%, 0%)</h1>
+
+<h1 style="background: HSL(0, 100%, 50%)">HSL(0, 100%, 50%)</h1>
+<h1 style="background: HSL(0, 100%, 75%)">HSL(0, 100%, 75%)</h1>
+<h1 style="background: HSL(0, 100%, 90%)">HSL(0, 100%, 90%)</h1>
+<h1 style="background: HSL(0, 100%, 100%)">HSL(0, 100%, 100%)</h1>
+<p>Con cololes HSL, los tonos de gris se realizan
+  configurando la saturación en 0 y ajustando el brillo de acuerdo con cómo oscuro / claro debe ser el color gris</p>
+
+<h1 style="background: HSL(0, 0, 0)">HSL(0, 0%, 0%)</h1>
+<h1 style="background: HSL(0, 0%, 24%)">HSL(0, 0%, 24%)</h1>
+<h1 style="background: HSL(0, 0%, 47%)">HSL(0, 0%, 47%)</h1>
+<h1 style="background: HSL(0, 0%, 71%)">HSL(0, 0%, 71%)</h1>
+<h1 style="background: HSL(0, 0%, 94%)">HSL(0, 0%, 94%)</h1>
+<h1 style="background: HSL(0, 0%, 100%)">HSL(0, 0%, 100%)</h1>
+
+
+
+<h2 style="background: green; color: white">valor RGBA</h2><hr>
+<p>los valores de color RGBA son una extención de colores RGB  con un canal alfa - el cual especifica la opacidad para un color</p>
+<p>Un color RGBA es especificado con: </p>
+<p>rgba(rojo, verde, azul, alfa)</p>
+<p>el  parametro alfa  es un numero 0.0 (completamente transparente) y 1.0 (no transparente en lo absoluto): </p>
+
+<h1 style="background: RGBA(255,99,71, 0.2)">RGBA(255,99,71, 0.2)</h1>
+
+<div style="background: RGB(0,255, 0)">
+ <!-- <div class="colores">  -->
+  <h1 style="background: RGBA(255, 99, 0)">RGBA(255, 99, 0)</h1>
+  <h1 style="background: RGBA(255, 99, 0.2)">RGBA(255, 99, 0.2)</h1>
+  <h1 style="background: RGBA(255, 99, 0.4)">RGBA(255, 99, 0.4)</h1>
+  <h1 style="background: RGBA(255, 99, 0.6)">RGBA(255, 99, 0.6)</h1>
+  <h1 style="background: RGBA(255, 99, 0.8)"> RGBA(255, 99, 0.8)</h1>
+  <h1 style="background: RGBA(255, 99, 1)">RGBA(255, 99, 1)</h1>
+  <h1 style="background: RGBA(255, 99, 1)">RGBA(255, 99, 1)
+    text with <span style="background: rgba(0,0,255, 0.5)">transparency</span></h1>
+</div>
+
+  </body>
+</html>

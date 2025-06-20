@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head><title>19_2075cProWebT2Practica5CorreaJose</title>
+	<meta name="description" content="Free Web tutorials"> 
+	<meta name="keywords" content="HTML, CSS, XML, JavaScript"> 
+	<meta name="author" content="John Dee"> 
+	<meta name="refresh" content="5"> 
+	<base href="C:/">
+<style>
+	h2{
+		color:white;
+		background-color: green;
+		padding: 7px;
+	}
+</style>
+</head>
+<body>
+	<h1>19_2075cProWebT2Practica5CorreaJose</h1>
+	<h2>El elemento HTML &lt;head&gt;</h2>
+	<hr>
+	<p>El elemento &lt;head&gt;  es un conterdor para metadatos (datos sobre datos) y se coloca entre  la etiqueta &lt;html&gt; y la etiqueta &lt;body&gt;</p>
+	<p> Los metadatos HTML son datos sobre el documento HTML. No se muestran los metadatos.</p>
+	<p>Los metadatos suelen definir el título del documento, el conjunto de caracteres, los estilos, los enlaces, los scripts y otra metainformación..</p>
+	<p>Las siguientes etiquetas describen metadatos: &lt; title &gt;, &lt;style &gt;, &lt; meta&gt;, &lt; link &gt;, &lt; script &gt; y &lt; base &gt;.</p>
+	
+	<h2>El  elemento HTML &lt;meta&gt;</h2>
+	<hr>
+	<p>El elemento &lt;meta&gt; se utiliza para especificar qué juego de caracteres a utiliza, descripción de la página, palabras clave, autor y otros metadatos..</p>
+	<p>Los metadatos son utilizados por navegadores (cómo mostrar contenido), por motores de búsqueda (palabras clave) y otros servicios web..</p>
+	<p>Definir el juego de caracteres a utilizar:</p>
+	<pre>&lt;meta&gt;</pre>
+	<p>definir una descripción de su página web:</p>
+	<pre>&lt;meta name="descripccion content="tutoriales web gratis"&gt;</pre>
+	<p>Defina palabras clave para motores de búsqueda:</p>
+	<pre>&lt;meta name="palabras clave" content="HTML CSS, XML, JavaScript"&gt;</pre>
+	<p>definir el autor de la pagina</p>
+	<pre>&lt; meta name="autor" content="John Dee"&gt;</pre>
+	<p>actualizar el documento cada 30 segundos:</p>
+	<pre>&lt; meta http-equiv="actualizar" content="30"&gt;</pre>
+
+	<h2>El Elemento HTML &lt;base&gt;</h2><hr>
+	<p>El elemento&lt;base&gt; especifica la URL base y el destino base para todas las URL relativas en una página:</p>
+	<p>&lt;base href="C:\wamp64\www\SW\189621ingles\images\"target="_blank"&gt;</p>
+		<img src="img.png" alt="base">
+		<img src="img40.jpg" alt="fuera del base">
+
+
+	<h2>Omitiendo &lt;html&gt;, &lt;head&gt; y &lt;body&gt;?</h2>
+	<hr>
+	<p>Según el estándar HTML5; las etiquetas &lt;html&gt;, la &lt;body&gt;, y la &lt;head&gt; se puede omitir.
+        El siguiente código se validará como HTML5:</p>
+	
+		<pre>&lt;!DOCTYPE html&gt;
+				&lt;title&gt; tilulo de la pagina &lt;/title&gt;
+				&lt;h1&gt;este es un título &lt;/h1&gt;
+				&lt;p &gt;este es un parrafo &lt;/p&gt;
+				</pre>
+	
+	<h2>El atributo del juego de caracteres HTML (charset)</h2><hr>
+	<p>Para HTML4:</p>
+	<pre>
+	 &LT;meta http-equiv="Content-Type" content="text/html; charset=UTF-8/"&GT;
+	 &LT;meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1/"&GT;
+	</pre>
+
+	<p>Para HTML5:</p>
+	<pre>&lt; meta charset=UTF-8&gt;</pre>
+	
+</body>
+</html>

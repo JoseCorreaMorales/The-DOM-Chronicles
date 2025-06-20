@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+
+<head><title>19_2075cProWebT2Ejercicio4CorreaJose</title>
+	<style>
+		h2 {
+			color: white;
+			background-color: green;
+			padding: 7px;
+		}
+		img {
+			width: 50%;
+		}
+
+		body {
+			background-image: url('fondo.jpg');
+			background-repeat: no-repeat;
+			 background-repeat: repeat-x; 
+		}
+
+	  body{
+ 		 	background-repeat: repeat-y;   
+}
+	</style>
+</head>
+<body>
+	<h1>19_2075cProWebT2Ejercicio4CorreaJose</h1>
+	<h2>HTML Images</h2>
+	<hr>
+	<h2>HTML Images Syntax</h2>
+	<hr>
+	<p>In HTML, images are defined with the - img - tag.</p>
+	<p>The - img - tag is empty, it contains attributes only, and does not have a closing tag.</p>
+	<p>The src attribute specifies the URL (web address) of the image:</p>
+	<p>img src="url"</p>
+
+	<h2>The alt Attribute</h2>
+	<hr>
+	<p>The alt attribute provides an alternate text for an image, if the user for some reason cannot view it (because of
+		slow connection, an error in the src attribute, or if the user uses a screen reader).</p>
+	<p>The value of the alt attribute should describe the image:</p>
+	<img src="img40.jpg" alt="Old House">
+	<p>If a browser cannot find the image, it will display the alternate text:</p>
+	<img src="chania.gif" alt="Flowers in Chania">
+
+	<h2>Image Size - Width and Height</h2>
+	<hr>
+	<p>You can use the style attribute to specify the width and height of an image.</p>
+	<img src="img42.jpg" alt="knife" style="width: 300px; height: 300px;">
+	<img src="img42.jpg" alt="knife" style="width: 300px;">
+	<p>Alternatively, you can use the width and height attributes:</p>
+	<img src="img42.jpg" alt="Girl in a jacket" height="100px" width="100px">
+
+	<h2>Width and Height, or Style?</h2>
+	<hr>
+	<p>Both the width, height, and style attributes are valid in HTML5.</p>
+	<p>However, we suggest using the style attribute. It prevents styles sheets from changing the size of images:</p>
+	<pre>
+	&lt; style &gt;
+		img {
+		width:100%;
+		}
+	</pre>
+	<p>The image below has the width attribute set to 128 pixels, but the stylesheet overrides it, and sets the width to
+		100%.</p>
+	<img src="img43.jpg" alt="HTML5 Icon" width="128" height="128">
+	<p>The image below uses the style attribute, where the width is set to 128 pixels which overrides the stylesheet:
+	</p>
+	<img src="img43.jpg" alt="HTML5 Icon" style="width: 128px; height: 128px;">
+
+	<h2>Images in Another Folder</h2>
+	<hr>
+	<p>If not specified, the browser expects to find the image in the same folder as the web page.</p>
+	<p>However, it is common to store images in a sub-folder. You must then include the folder name in the src
+		attribute:</p>
+	<img src="images/img44.jpg" alt="in other folder" style="width: 300px;">
+
+	<h2>Images on Another Server</h2>
+	<hr>
+	<p>Some web sites store their images on image servers.</p>
+	<p>Actually, you can access images from any web address in the world:</p>
+	<!--<img src="http://itsch.edu.mx/assets/images/header.png" alt="W3School.com">-->
+	<img src="https://www.cdhidalgo.tecnm.mx/images/itsch.jpg" style="width: 300px; height: 300px" alt="W3School.com">
+
+
+
+	<h2>Animated Images</h2>
+	<hr>
+	<p>HTML allows animated GIFs:</p>
+	<img src="img41.gif" alt="Carrot" style="width: 200px;">
+
+	<h2>Image as a Link</h2>
+	<hr>
+	<p>To use an image as a link, put the &lt;img&gt;  tag inside the &lt;a&gt; tag:</p>
+	<a href="https://itsch.edu.mx" target="_blank"><img src="img45.png" alt="HTML tutorial"
+			style="width: 200px; height: 200px; border: 0;"></a>
+
+
+
+	<h2>Image Floating</h2>
+	<hr>
+	<p>Use the CSS float property to let the image float to the right or to the left of a text:</p>
+
+	<p><strong>Float the image to the right:</strong></p>
+	<p> <img src="img43.jpg" alt="Smiley face" style="float: right; width: 42px; height: 42px;">A paragraph with a
+		floating image. A paragraph with a float floating image. A paragraph with a floating image.</p>
+
+	<p><strong>Float the image to the left:</strong></p>
+	<p> <img src="img43.jpg" alt="Smiley face" style="
+		float: left;
+		width: 42px;
+		height: 42px;
+		border: 2px solid yellow;
+		padding: 50px 30px 10px 150px;
+		margin: 10px 0px 15px 30px;">
+		A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.</p>
+	<p>Please use the CSS float property. The align attribute is deprecated in HTML 4, and not supported in HTML5.</p>
+
+	<p> <img src="img43.jpg" alt="Smiley face" style="
+			float: left;
+			width: 42px;
+			height: 42px;
+			border: 2px solid yellow;
+			margin: 30px 30px 30px 30px;">
+		A paragraph with a floating image. A paragraph with a floating image. A paragraph with a floating image.</p>
+	<p>Please use the CSS float property. The align attribute is deprecated in HTML 4, and not supported in HTML5.</p>
+	<!--  -->
+
+	<h2>Image Maps</h2>
+	<hr>
+	<p>Use the &lt;map&gt; tag to define an image-map. An image-map is an image with clickable areas.</p>
+	<p>In the image below, click on the computer, the phone, or the cup of coffee:</p>
+	<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+	<img src="img47.jpg" alt="worklace" usemap="#workmap" width="400" height="379">
+	<map name="workmap">
+		<area shape="rect" coords="10, 0, 50, 100" href="19_2075cProWebT3Ejercicio1CorreaJose.html" alt="computer"
+			title="hola">
+		<area shape="rect" coords="290, 172, 333, 250" href="19_2075cProWebT3Ejercicio2CorreaJose.html" alt="Phone">
+		<area shape="circe" coords="337, 330, 44" href="19_2075cProWebT3Ejercicio3CorreaJose.html" alt="Cup of coffe">
+		<area shape="circe" coords="125,30,25" href="Star" alt="https:///itsch.edu.mx" title="itsch" target="_blank">
+	</map>
+
+	<h2>Background Image</h2>
+	<hr>
+	<p>To add a background image on an HTML element, use the CSS property background-image:</p>
+	<pre>
+	&lt;body style="background-image:url('img48.jpg');"&gt;</pre>
+
+
+</body>
+
+</html>

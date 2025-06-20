@@ -1,0 +1,122 @@
+
+
+#container{
+background-color: rgb(255, 223, 172);
+border: 2px solid #805300;
+padding: 5px ;
+width: 960px;
+margin: 10px auto;
+height: auto;
+}
+
+#header{
+    background-color: #805300;
+    color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+#section{
+    background-color: #fff;
+    width: 570px;
+    float: left;
+    margin: 10px auto;
+    padding: 15px;
+}
+
+#sidebar{
+    background-color: rgb(255, 215, 85);
+    width: 290px;
+    float: right;
+    padding: 15px;
+    margin: 10px auto;
+}
+
+#footer{
+    background-color: #ffc547;
+    color: rgb(87, 54, 0);
+    clear: both;
+    padding: 15px;
+}
+
+body{
+    background-color: hsl(300, 100%, 10%);
+    color: hsl(39, 100%, 25%);
+    background-repeat: repeat-x;
+    padding-left: 30px;
+    padding-right: 30px;
+    background-image: url("logoITSCH125.png");
+}
+
+h2{
+    color: rgb(73, 50, 0);
+    border-bottom: 10px solid #805300;
+    padding: 7px;
+    margin-right: 60px;
+
+}
+
+h3{
+    color: hsl(0, 0, 100%);
+    background-color: #805300;
+    padding: 7px;
+    margin-right: 200px;
+}
+
+b{
+    color: #fa5959;
+
+}
+
+img{
+border: none;
+float: left;
+    width: 100px;
+    margin: 10px;
+    padding: 0px;
+
+}
+
+.instrucciones{
+    background-color: #805300;
+    color: hsl(0, 100%, 100%);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 40px;
+}
+
+#datos{
+    background-color: rgb(255, 218, 170);
+    color: rgb(139, 79, 0);
+    border-top: 10px dotted #ff9900;
+    border-right: 15px dotted hsl(0, 100%, 35%);
+    border-bottom: 11px dotted #ff9900;
+    border-left: 7px dotted hsl(0, 100%, 15%);
+    padding: 40px;
+}
+
+.descripccion{
+    background-color: hsl(276, 100%, 85%);
+    color: rgb(23, 83, 0);
+    border: 5px dashed #805300;
+    padding: 40px;
+}
+
+    .tecNM{
+    float: left;
+    width: 200px;
+    border: 6px solid rgb(255, 153, 0);
+    padding: 20px;
+    margin: 40px;
+}
+
+.input{/* 8 y 15 salta línea*/
+    padding: 6px;
+    margin: 10px;
+}
+
+.inputColor{
+    background-color: hsl(300, 100%, 35%);
+    padding: 8px;
+    margin: 14px;
+    color: #fa5959;
+}

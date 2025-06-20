@@ -1,0 +1,50 @@
+#container {
+    background-color: rgb(115, 255, 126);
+    border: 2px solid green;
+    padding: 5px;
+    width: 960px;
+    margin: 10px auto;
+    height: auto;
+}
+
+#header {
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+#section {
+    background-color: #fff;
+    width: 570px;
+    float: left;
+    margin: 10px;
+    padding: 15px;
+}
+
+#sidebar {
+    /* aside */
+    background-color: #fff;
+    width: 290px;
+    float: right;
+    padding: 15px;
+    margin: 10px auto;
+}
+
+#footer {
+    /* footer */
+    background-color: #ffff;
+    clear: both;
+    padding: 15px;
+}
+
+/*********************TITLES ***********************/
+h2 {
+    color: white;
+    background-color: green;
+    padding: 15px;
+}
+
+.conclucions {
+    color: white;
+    background-color: rgb(0, 37, 107);
+    padding: 7px;
+}

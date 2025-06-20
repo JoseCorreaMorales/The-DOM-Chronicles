@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>19_2075cProWebT2Practica6CorreaJose</title>
+<link rel="stylesheet" href="19_2075cProWebT2Ejercicio6CorreaJose.css">
+</head>
+<body>
+	<h1>19_2075cProWebT2Practica6CorreaJose</h1>
+	<!--  -->
+	<h2>Diseño CSS: ancho y ancho máximo</h2>
+	<hr>
+	<p>Como se mencionó en el capítulo anterior; un elemento a nivel de bloque siempre ocupa todo el ancho disponible (se extiende hacia la izquierda y hacia la derecha tanto como puede).</p>
+	<p>Establecer el ancho de un elemento a nivel de bloque evitará que se extienda hasta los bordes de su contenedor. Luego, puede establecer los márgenes en automático, para centrar horizontalmente el elemento dentro de su contenedor. El elemento ocupará el ancho especificado y el espacio restante se dividirá en partes iguales entre los dos márgenes.</p>
+	<p>Nota: El problema con el &lt;div&gt; encima ocurre cuando la ventana del navegador es más pequeña que el ancho del elemento. Luego, el navegador agrega una barra de desplazamiento horizontal a la página.</p>
+
+	<p class="ex0">En su lugar, usar el ancho máximo, en esta situación, mejorará el manejo de las ventanas pequeñas por parte del navegador.</p>
+	<p>esto es importante al hacer que el sitio se pueda utilizar en dispositivos pequeños:</p>
+
+	<div class="ex1">Este elemento div tiene de ancho: <span> 500px;</span></div>
+
+	<div><p>este element div <b class="ex0"> tiene de ancho: <span>500px;</span></b></p></div>
+
+	<br>
+	<div class="ex2">Este elemento div tiene un ancho máximo: 500px;</div>
+	<p><strong>Tip:</strong> Arrastre la ventana del navegador a menos de 500px de ancho para ver la diferencia entre los dos divs.</p>
+	
+	<h2>Posición: estático;</h2>
+	<hr>
+	<p>Un elemento con posición: estático; no se coloca de ninguna manera especial; siempre se posiciona de acuerdo con el flujo normal de la página:</p>
+	<div class="static"> Esta posición del elemento div: estático; Este elemento div tiene position: static; </div>
+	
+	<h2>position: relative;</h2>
+	<hr>
+	<p>Un elemento con posición: relativa; está posicionado en relación con su posición normal:</p>
+	
+	<div class="relative"> Este elemento div tiene position: relative;</div>
+
+
+	<h2>posición: fija; (fixed)</h2>
+	<hr>
+	<p>Un elemento con posición: fijo; se coloca en relación con la ventana gráfica, lo que significa que siempre permanece en el mismo lugar incluso si se desplaza la página:</p>
+
+	<div class="fixed">Este div tiene la posición: FIJA;</div>
+	
+
+	<h2>Posición: absoluta;</h2>
+	<hr>
+	<p>Un elemento con posición: absoluta; está posicionado en relación con el antecesor posicionado más cercano (en lugar de posicionado en relación con la ventana gráfica, como fijo):</p>
+	
+	<div class="relative2">
+	<div class="absolute">Este elemento div tiene posición: absoluta; </div>
+	</div>
+
+
+	<h2>Posición: pegajoso; (sticky)</h2>
+	<p>Prueba <b>Desplazarte</b> dentro de este marco para comprender cómo funciona el posicionamiento fijo.</p>
+	<p>Nota: IE / Edge 15 y las versiones anteriores no admiten la posición fija.</p>
+
+	<div class="sticky">Soy pegajoso!</div>
+
+	<div style="padding-bottom:800px">
+	<p>En este ejemplo, el elemento adhesivo se pega en la parte superior de la página (parte superior: 0), cuando llega a su posición de desplazamiento..</p>
+	<p> Desplácese hacia arriba para eliminar la pegajosidad.</p>
+	<p>Algún texto para permitir el desplazamiento.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+	</div>
+
+	<p>Algún texto para permitir el desplazamiento.. Lorem ipsum dolor sit amet, illum definitiones no quo, maluisset concludaturque et eum, altera fabulas ut quo. Atqui causae gloriatur ius te, id agam omnis evertitur eum. Affert laboramus repudiandae nec et. Inciderint efficiantur his ad. Eum no molestiae voluptatibus.</p>
+	
+
+	<div>
+		<h2>Elementos superpuestos</h2>
+	<hr>
+	<h1>Este es un encabezado</h1>
+	<img src="img46.jpg" width="400px">
+	<img src="img46.jpg" width="200px">
+	<p>Debido a que la imagen tiene un índice Z de -1, se colocará detrás del texto..</p> 
+	</div>
+		
+	
+	
+
+	
+</body>
+</html>

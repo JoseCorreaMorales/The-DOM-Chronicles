@@ -1,0 +1,89 @@
+ /****************** ESTRUCTURA**************** */
+        #container {
+            background-color: rgb(115, 255, 126);
+            border: 2px solid green;
+            padding: 5px;
+            width: 960px;
+            margin: 10px auto;
+            height: auto;
+        }
+
+        #header {
+            background-color: rgb(255, 255, 255);
+            padding: 15px;
+        }
+
+        #section {
+            /*section article*/
+            background-color: #ffff;
+            width: 570px;
+            float: left;
+            margin: 10px auto;
+            padding: 15px;
+
+        }
+
+        #sidebar {
+            /* aside */
+            background-color: #ffffff;
+            width: 290px;
+            float: right;
+            padding: 15px;
+            margin: 10px auto;
+        }
+
+        #footer {
+            background-color: #fff;
+            clear: both;
+            padding: 7px;
+        }
+
+        /********** TITLES *******************+*/
+
+        h2 {
+            color: white;
+            background-color: green;
+            padding: 7px;
+        }
+        .conclusions {
+            color: white;
+            background-color: rgb(0, 37, 107);
+            padding: 7px;
+        }
+
+        
+
+        /************** ESTILOS DEL EJERCICIO ***********************/
+        hr {
+            border-bottom: 10px solid #ffa20c;
+        }
+
+        h2 {
+            border: 5px solid #5eff00;
+        }
+
+        #datos {
+            border-top: 4px dotted #ff00f2;
+            border-bottom: 14px dotted rgb(113, 0, 121);
+        }
+
+        .contenido {
+            border: 2px dashed rgb(255, 238, 0);
+        }
+
+        img {
+            float: right;
+            width: 250px;
+            border: 2px solid rgb(0, 105, 42);
+            padding: 20px;
+            margin: 20px;
+        }
+
+        input {
+            padding: 5px;
+            margin: 10px;
+        }
+
+        .inputcolor {
+            background-color: yellow;
+        }
