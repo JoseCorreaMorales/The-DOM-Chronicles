@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>21_2075cProWebT3Practica5CorreaJose</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UFT-8" />
+    <meta http-equiv="Content-Type" content="text/html; charsert=ISO-8859-1">
+    <style>
+        myCrush {
+            color: red;
+        }
+    </style>
+    <link rel="stylesheet" href="css/Estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>21_2075cProWebT3Practica5CorreaJose</h1>
+            <ul class="topnav">
+                <li><a href="21_2075cProWebT3Practica5CorreaJose.html">Prac5</a></li>
+                <li><a href="21_2075cProWebT3Practica6CorreaJose.html">Prac6</a></li>
+                <li><a href="21_2075cProWebT3Practica7CorreaJose.html">Prac7</a></li>
+                <li><a href="21_2075cProWebT3Practica8CorreaJose.html">Prac8</a></li>
+            </ul>
+        </div>
+
+        <div id="content">
+            <div id="section">
+                <h2>Un encabezado</h2>
+                <hr>
+                <myCrush>My Crush Element, tan triste</myCrush>
+            
+                <h2>Por qué estudiar JavaScript?</h2>
+                <hr>
+                <ul>
+                    <li> 1. HTML para definir el contenido de las páginas web </li>
+                    <li> 2. CSS para especificar el diseño de las páginas web </li>
+                    <li> 3. JavaScript para programar el comportamiento de las páginas web </li>
+                </ul>
+
+                <h2> JavaScript puede cambiar el contenido HTML </h2>
+                <hr>
+                <p> Uno de los muchos JavaScript utiliza el método de "buscar un elemento HTML (con id =" demo ") y cambia el contenido del elemento (innerHTML) a "Hola JavaScript": </p>
+
+                <p id ="demo1"> Este ejemplo usó el método para "buscar" un elemento HTML (con id = "demo") y cambia el contenido del elemento (innerHTML) a "Hello JavaScript": </p>
+
+                <p id ="demo1"> JavaScript puede cambiar el contenido HTML. </p>
+
+                <button onclick='document.getElementById("demo1").innerHTML = "<h1> Hello Crush!</h1>"'>¡Haz click en mi!</button>
+
+                <p> JavaScript acepta comillas simples y dobles: </p>
+
+                <p id ="demo2"> JavaScript puede cambiar el contenido HTML </p>
+
+                <button type="button" onclick="document.getElementById('demo2').innerHTML = 'My mom loves me;'">Crush
+                    me!</button>
+
+                    <h2>What can JavaScript do?</h2>
+                <hr>
+                <p> JavaScript puede cambiar atributos HTML </p>
+                <p> En este caso, JavaScript cambia los atributos src (sourse) de una imagen </p>
+
+                <button onclick="document.getElementById('myImage').src ='img/pic_bulbon.gif'">Enciende la luz
+                </button>
+
+                <img id="myImage" src="img/pic_bulboff" style="width: 100px;">
+
+                <button onclick="document.getElementById('myImage').src = 'img/pic_bulboff.gif'">Apaga al luz</button>
+
+                <h2> JavaScript puede cambiar el estilo HTML (CSS) </h2>
+                <hr>
+                <p> Cambiar el estilo de un elemento HTML es una variante de Cambiar un atributo HTML: </p>
+
+                <p id="demo3">JavaScript puede cambiar el estilo de un elemento HTML</p>
+
+                <button type="button" onclick="document.getElementById('demo3')
+                .style.fontSize='35px';
+                document.getElementById('demo3').style.color='blue';">¡Haz click en mi! 35px blue</button>
+
+                <button onclick="document.getElementById('demo3').style.fontSize='16px';">¡Haz click en mi! 16px</button>
+
+                <button onclick="document.getElementById('demo3').style.color='yellow';">¡Haz click en mi! amarillo</button>
+
+
+                <h2> JavaScript puede mostrar elementos HTML </h2>
+                 <hr>
+                 <p> También se puede mostrar el elemento HTML cambiando el estilo de visualización: </p>
+                <p id="demo4" style="display: none;">Hola JavaScript!</p>
+
+
+                    <button onclick="document.getElementById('demo4').style.display='block';">  bloqueo de pantalla</button>
+                    <button onclick="document.getElementById('demo4').style.display='none';">no mostrar ninguno</button>
+                
+              <script>
+                  cond=true;
+              </script>      
+
+             <button id="buttonDisplay" onclick="
+             if (cond) {
+                 document.getElementById('demo4').style.display='block';
+                 document.getElementById('buttonDisplay').innerHTML = 'no mostrar ninguno';
+                 cond = false;
+             }else{
+                 document.getElementById('demo4').style.display='none';
+                document.getElementById('buttonDisplay').innerHTML = 'no mostrar ninguno';
+                cond = true;
+             }
+             
+             ">bloqueo de pantalla</button> 
+
+
+            </div>
+        </div>
+
+        <div id = "footer">
+            <h2> Instituto Tecnológico Superior de Ciudad Hidalgo </h2>
+            <p> <b> Semestre </b> Agosto Diciembre 2021 </p>
+            <p> <b> Asunto </b> Programación web </p>
+            <p> <b> Grupo </b> 075c </p>
+            <p> <b> Profesor </b> Erik Augusto Ramirez Vargas </p>
+            <p> <b> Estudiante </b> Jose Correa Morales </p>
+            </div>
+    </div>
+
+</body>
+
+</html>

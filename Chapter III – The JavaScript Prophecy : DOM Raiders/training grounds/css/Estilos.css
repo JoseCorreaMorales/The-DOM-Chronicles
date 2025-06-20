@@ -1,0 +1,51 @@
+
+#container{
+    width: 960px;
+    padding: 5px;
+    margin: 10px auto;
+    height: auto;
+    border: 2px solid green;
+    background-color: rgb(115, 255, 126);
+}
+
+#header{
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+}
+
+
+#section{
+    margin: 10px auto;
+    padding: 15px;
+    background-color: #ffffff;
+    width: 900px;
+    float: left;
+}
+
+#sidebar{
+    background-color: #ffffff;
+    width: 290px ;
+    float: right;
+    padding: 15px;
+    margin: 10px auto;
+
+}
+
+#footer{
+    clear: both;
+    padding: 15px;
+    background-color: #ffffff;
+    
+}
+
+h2{
+    background-color: green;
+    color: white;
+    padding: 7px;
+}
+
+h3{
+    color: #000;
+    background-color: rgb(255, 174, 0);
+    padding: 7px;
+}

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>20_2075cProWebT3Ejercicio6CorreaJose</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=UFT-8" />
+	<meta http-equiv="Content-Type" content="text/html; charsert=ISO-8859-1">
+	<style>
+		myCrush {
+			color: blue;
+		}
+	</style>
+	<link rel="stylesheet" href="css/Estilos.css">
+	<link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+
+	<div id="container">
+		<div id="header">
+			<h1>20_2075cProWebT2Ejercicio6CorreaJose</h1>
+			<ul class="topnav">
+				<li><a href="21_2075cProWebT3Ejercicio5CorreaJose.html">Ejer5</a></li>
+				<li><a href="21_2075cProWebT3Ejercicio6CorreaJose.html">Ejer6</a></li>
+				<li><a href="21_2075cProWebT3Ejercicio7CorreaJose.html">Ejer7</a></li>
+				<li><a href="21_2075cProWebT3Ejercicio8CorreaJose.html">Ejer8</a></li>
+			</ul>
+		</div>
+		<div id="content">
+			<div id="section">
+				<h2>The &lt;script&gt; Tag</h2>
+				<hr>
+				<p>In HTML, JavaScript code must be inserted between &lt;script&gt; and &lt;/script&gt; tags.</p>
+				<p id="demo">Jose</p>
+				<script>
+					document.getElementById("demo").innerHTML = "My First JavaScript, hello!";
+				</script>
+
+				<h2>JavaScript in Head</h2>
+				<hr>
+				<p id="demo2">A Paragraph.</p>
+				<p id="demo21">A Paragraph.</p>
+				<p id="demo22">My Crush.</p>
+				<button onclick="myFunction();">Try it</button>
+				<button onclick="byeBye();">Try it</button>
+				<button onclick="myCrush();">Try your Crush</button>
+
+				<h2>JavaScript in external file</h2>
+				<p id="demo3">A Paragraph.</p>
+				<button onclick="myFunction2();">Try it</button>
+				<p>(myFunction is stored in an external file called "myScript.js")</p>
+
+				<h2>Using innerHTML and write</h2>
+				<hr>
+				<p>document.innerHTML</p>
+				<p id="demo4"></p>
+				<script>
+					document.getElementById("demo4").innerHTML = 5 + 6;
+				</script>
+
+				<h2>document.write</h2>
+				<p>-----15 prueba HTML-----</p>
+				<p>-----30 prueba HTML-----</p>
+				<p>prueba write 1 =
+					<script>document.write(15 + 30);</script>
+				</p>
+
+				<script>
+					document.write("<h2>titulo 5 más 10 =" + (5 + 10) + "</h2>");
+					document.write("<h3>titulo 10 +20=" + (10 + 20) + "</h3>");
+					document.write("<input type='radio' checked>radio" +
+						"<ul>" +
+						"   <li>a</li>" +
+						"	<li>b</li>" +
+						"	<li>c</li>" +
+						"</ul>");
+				</script>
+
+				<p>document.write in a button</p>
+				<button onclick="document.write(5 + 11);">Try 5 + 11</button>
+
+				<h2>window.alert</h2>
+				<hr>
+				<p>You can use an alert box to display data:</p>
+				<script>
+					window.alert((50 + 16) + " string next to result");
+				</script>
+
+				<h2>Using console.log()</h2>
+				<hr>
+				<p>For debugging purposes, you can use the console.log() method to display data.</p>
+				<p>Activate debugging with F12</p>
+				<p>Select "Console" in the debugger menu. Then click Run again.</p>
+				<script>
+					console.log(80 + 500 + "result on console");
+				</script>
+
+				<h2>JavaScript Statements</h2>
+				<hr>
+				<p>A <b>JavaScript program</b> is a list of <b>statements</b> to be executed by a computer.</p>
+				<p id="demo5"></p>
+				<p id="demo6"></p>
+				<p id="demo7"></p>
+				<script>
+					var x, y, z;  // Statement 1
+					x = 1;        // Statement 2
+					y = 2;        // Statement 3
+					z = x + y;    // Statement 4
+					document.getElementById("demo5").innerHTML = "The value of z is " + z + ".";
+					var a, b, c;  // Declare 3 variables
+					a = 6;        // Assign the value 6 to a
+					b = 7;        // Assign the value 7 to b
+					c = a + b;    // Assign the sum of a and b to c
+					document.getElementById("demo6").innerHTML = "The value of c is " + c + ".";
+					a = 3; b = 4; c = a + b;
+					document.getElementById("demo7").innerHTML = "The value of c is " + c + ".";
+				</script>
+			</div>
+		</div>
+		<div id="footer">
+			<h2> Higher Technological Institute of Ciudad Hidalgo </h2>
+			<p> <b> Semester </b> August December 2021 </p>
+			<p> <b> Subject </b> Web Programming </p>
+			<p> <b> Group </b> 075c </p>
+			<p> <b> Professor </b> Erik Augusto Ramirez Vargas </p>
+			<p> <b> Student </b> Jose Correa Morales </p>
+		</div>
+
+	</div>
+
+	<script>
+		function myFunction(){
+			document.getElementById("demo2").innerHTML = "paragraph changed";
+		}
+
+		function byeBye(){
+			document.getElementById("demo21").innerHTML = "Let us go";
+
+		}
+
+		function myCrush(){
+			document.getElementById("demo22").innerHTML = "Sintax error";
+		}
+
+	</script>
+</body>
+
+</html>

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>21_2075cProWebT3ExamenCorreaJose</title>
+
+    <link rel="stylesheet" href="css/Estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<!--Avenir Next Rounded  sans-serif;-->
+<body style="font-family: sans-serif;">
+    <div id="container">
+        <div id="header">
+            <h1>Inventario - Agregar jardinera</h1>
+            <ul class="topnav">
+                <li><a href="#">Agregar</a></li>
+                <li><a href="#">Eliminar</a></li>
+                <li><a href="#">Modificar</a></li>
+                <li><a href="#">Visualizar</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="section">      
+                <form id="form1" name="form1" method="post" action="#" onsubmit="return validarForm(this);"> 
+
+                     <div  id="miSideBar"> 
+                    <p>
+                        <p>Tamaño</p>
+                        <input type="radio" id="rad_Chica" name="rad_tamano" value="rad_Chica">
+                        <label for="rad_Chica">Chica</label><br>
+
+                        <input type="radio" id="rad_Mediana" name="rad_tamano" value="rad_Mediana">
+                        <label for="rad_Mediana">Mediana</label><br>
+
+                        <input type="radio" id="rad_Grande" name="rad_tamano" value="rad_Grande">
+                        <label for="rad_Grande">Grande</label>
+                    </p>
+                    <br>
+
+                    <p>
+                        <label for="lst_Color">Color</label><br><br>
+                        <select name="lst_Color" id="lst_Color">
+                            <option>Selecciona un color...</option>
+                            <option>Negro</option>
+                            <option>Marrón</option>
+                            <option>Blanco</option>
+                        </select>
+                    </p>
+                </div>
+
+                    <p><label for="text_codigo">Codigo </label><br>
+                        <input type="text" name="text_codigo" id="txt_Codigo" >
+                    </p>
+
+
+                    <p><label for="txt_Precio">Precio </label><br>
+                        <input type="text" name="txt_Precio" id="txt_Precio">
+                    </p>
+
+                  <p><label for="txt_Cantidad">Cantidad </label><br>
+                        <input type="text" name="txt_Cantidad" id="txt_Cantidad">
+                    </p>
+
+                    <p>
+                        <p>Observaciones</p>
+                        <textarea id="Observaciones" name="Observaciones"
+                        onkeyup="javascript:this.value=this.value.toUpperCase();"
+                       
+                    ></textarea><!--"overflow: scroll; resize: none;-->
+                    </p>
+
+                    <p><button name="btn_guardar" class="btn_guardar"><b>Guardar</b></button></p>
+
+                </form>
+            </div>
+
+        </div>
+
+        <div id="footer">
+             <h2 style="border-bottom: 3px solid black;"> Proyecto Jardinería del Edén </h2>
+           
+             <ol>
+                 <li>
+                    <p>Jose Correa Morales </p> 
+                 </li>
+                  <li><p>Jose Octavio Palacio Flores</p> </li>
+            <li>  <p>Josue Guadalupe González Colin</p></li>
+             </ol>
+            
+            
+           
+        </div>
+
+    </div>
+    <script src="js/validarEspañol.js"></script>
+</body>
+
+</html>

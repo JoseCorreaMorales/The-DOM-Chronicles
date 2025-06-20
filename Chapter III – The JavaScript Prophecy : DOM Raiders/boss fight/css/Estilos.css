@@ -1,0 +1,61 @@
+
+#container{
+    width: 500px;
+    padding: 5px;
+    margin: 10px auto;
+    height: auto;
+    border: 2px solid green;
+    background-color: rgba(160,252,69, 4);
+}
+
+#header{
+    background-color: rgb(255, 255, 255);
+    padding: 15px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+}
+
+
+#section{
+    margin: 15px;
+    padding: 25px;
+    background-color: #ffffff;
+    width: 400px;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+}
+
+
+#miSideBar{
+    float: right;
+
+}
+
+#footer{
+    clear: both;
+    padding: 15px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    border: 1px solid #CCC;
+    
+}
+
+.btn_guardar{
+    padding: 15px;
+    height: 50px;
+    border-radius: 10px;
+    border: 3px solid green;
+    font-family: sans-serif;
+}
+
+.btn_guardar:hover{
+    background-color: rgba(160,252,69, 10);
+    font-size: 12px;
+    border: double green;
+}
+
+#rad_Chica, #rad_Mediana, #rad_Grande{
+    margin: 10px;
+}
+

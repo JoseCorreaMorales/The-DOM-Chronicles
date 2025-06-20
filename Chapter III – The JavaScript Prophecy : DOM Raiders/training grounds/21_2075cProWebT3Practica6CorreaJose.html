@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>20_2075cProWebT3Practica6CorreaJose</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UFT-8" />
+    <meta http-equiv="Content-Type" content="text/html; charsert=ISO-8859-1">
+    <style>
+        myCrush {
+            color: blue;
+        }
+    </style>
+    <link rel="stylesheet" href="css/Estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+
+    <div id="container">
+        <div id="header">
+            <h1>20_2075cProWebT2Practica6CorreaJose</h1>
+            <ul class="topnav">
+                 <li><a href="21_2075cProWebT3Practica5CorreaJose.html">Prac5</a></li>
+                <li><a href="21_2075cProWebT3Practica6CorreaJose.html">Prac6</a></li>
+                <li><a href="21_2075cProWebT3Practica7CorreaJose.html">Prac7</a></li>
+                <li><a href="21_2075cProWebT3Practica8CorreaJose.html">Prac8</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="section">
+                <h2>La etiqueta &lt;script&gt;</h2>
+                <hr>
+                <p>En HTML, el código JavaScript debe insertarse entre las etiquetas&lt;script&gt; y &lt;/script&gt;</p>
+                <p id="demo">Jose</p>
+                <script>
+                    document.getElementById("demo").innerHTML = "My First JavaScript, hello!";
+                </script>
+
+                <h2>JavaScript en cabezera</h2>
+                <hr>
+                <p id="demo2">Un parrafo.</p>
+                <p id="demo21">Un parrafo.</p>
+                <p id="demo22">My Crush.</p>
+                <button onclick="myFunction();">Pruebalo</button>
+                <button onclick="byeBye();">Pruebalo</button>
+                <button onclick="myCrush();">Prueba tu Crush</button>
+
+                <h2>JavaScript en archivo externo</h2>
+                <p id="demo3">Un parrafo.</p>
+                <button onclick="myFunction2();">Pruebalo</button>
+                <p>(myFunction se almacena en un archivo externo llamado "myScript.js")</p>
+
+                <h2>Usar innerHTML y escribir</h2>
+                <hr>
+                <p>document.innerHTML</p>
+                <p id="demo4"></p>
+                <script>
+                    document.getElementById("demo4").innerHTML = 5 + 6;
+                </script>
+
+                <h2>document.write</h2>
+                <p>-----15 prueba HTML-----</p>
+                <p>-----30 prueba HTML-----</p>
+                <p>prueba write 1 =
+                    <script>document.write(15 + 30);</script>
+                </p>
+
+                <script>
+                    document.write("<h2>titulo 5 más 10 =" + (5 + 10) + "</h2>");
+                    document.write("<h3>titulo 10 +20=" + (10 + 20) + "</h3>");
+                    document.write("<input type='radio' checked>radio" +
+                        "<ul>" +
+                        "   <li>a</li>" +
+                        "	<li>b</li>" +
+                        "	<li>c</li>" +
+                        "</ul>");
+                </script>
+
+                <p>document.write en un boton</p>
+                <button onclick="document.write(5 + 11);">Prueba 5 + 11</button>
+
+                <h2>window.alert</h2>
+                <hr>
+                <p>Puede utilizar un cuadro de alerta para mostrar datos:</p>
+                <script>
+                    window.alert((50 + 16) + " cadena junto al resultado");/*  */
+                </script>
+
+                <h2>Usando console.log()</h2>
+                <hr>
+                <p>Para fines de depuración, puede usar el método console.log( ) para mostrar datos.</p>
+                <p>Activar la depuración con F12</p>
+                <p>Seleccione "Consola" en el menú del depurador. Luego haga clic en Ejecutar nuevamente.</p>
+                <script>
+                    console.log(80 + 500 + " resultado en consola");
+                </script>
+
+                <h2>Declaraciones de JavaScript</h2>
+                <hr>
+                <p>Un <b>Programa JavaScript</b> es una lista de<b>declaraciones</b>
+                    para ser ejecutado por una computadora.</p>
+                <p id="demo5"></p>
+                <p id="demo6"></p>
+                <p id="demo7"></p>
+                <script>
+                    var x, y, z;  // Declaración 1
+                    x = 1;        // Declaración 2
+                    y = 2;        // Declaración 3
+                    z = x + y;    // Declaración 4
+                    document.getElementById("demo5").innerHTML = "El valor de z es " + z + ".";
+                    var a, b, c;  // Declare 3 variables
+                    a = 6;        // Assign the value 6 to a
+                    b = 7;        // Assign the value 7 to b
+                    c = a + b;    // Assign the sum of a and b to c
+                    document.getElementById("demo6").innerHTML = "El valor de c es " + c + ".";
+                    a = 3; b = 4; c = a + b;
+                    document.getElementById("demo7").innerHTML = "El valor de c es " + c + ".";
+                </script>
+            </div>
+        </div>
+        <div id="footer">
+            <h2> Higher Technological Institute of Ciudad Hidalgo </h2>
+            <p> <b> Semester </b> August December 2021 </p>
+            <p> <b> Subject </b> Web Programming </p>
+            <p> <b> Group </b> 075c </p>
+            <p> <b> Professor </b> Erik Augusto Ramirez Vargas </p>
+            <p> <b> Student </b> Jose Correa Morales </p>
+        </div>
+
+    </div>
+
+    <script>
+        function myFunction(){
+            document.getElementById("demo2").innerHTML = "parrafo cambiado";
+        }
+
+        function byeBye(){
+            document.getElementById("demo21").innerHTML = "Dejanos ir";
+
+        }
+
+        function myCrush(){
+            document.getElementById("demo22").innerHTML = "Error de sintaxis";
+        }
+
+    </script>
+</body>
+
+</html>

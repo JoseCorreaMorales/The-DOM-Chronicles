@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>21_2075cProWebT3ExamCorreaJose</title>
+
+    <link rel="stylesheet" href="css/Estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+<!--Avenir Next Rounded  sans-serif;-->
+<body style="font-family: sans-serif;">
+    <div id="container">
+        <div id="header">
+            <h1>Inventory - Add planter</h1>
+            <ul class="topnav">
+                <li><a href="#">Add</a></li>
+                <li><a href="#">Remove</a></li>
+                <li><a href="#">Modify</a></li>
+                <li><a href="#">Visualize</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="section">      
+                <form id="form1" name="form1" method="post" action="#" onsubmit="return validarForm(this);"> 
+
+                     <div  id="miSideBar"> 
+                    <p>
+                        <p>Size</p>
+                        <input type="radio" id="rad_Chica" name="rad_tamano" value="rad_Chica">
+                        <label for="rad_Chica">Small</label><br>
+
+                        <input type="radio" id="rad_Mediana" name="rad_tamano" value="rad_Mediana">
+                        <label for="rad_Mediana">Medium</label><br>
+
+                        <input type="radio" id="rad_Grande" name="rad_tamano" value="rad_Grande">
+                        <label for="rad_Grande">Big</label>
+                    </p>
+                    <br>
+
+                    <p>
+                        <label for="lst_Color">Color</label><br><br>
+                        <select name="lst_Color" id="lst_Color">
+                            <option>Select a color...</option>
+                            <option>Black</option>
+                            <option>Brown</option>
+                            <option>White</option>
+                        </select>
+                    </p>
+                </div>
+
+                    <p><label for="text_codigo">Code - ID </label><br>
+                        <input type="text" name="text_codigo" id="txt_Codigo" >
+                    </p>
+
+
+                    <p><label for="txt_Precio">Price </label><br>
+                        <input type="text" name="txt_Precio" id="txt_Precio">
+                    </p>
+
+                  <p><label for="txt_Cantidad">Quantity </label><br>
+                        <input type="text" name="txt_Cantidad" id="txt_Cantidad">
+                    </p>
+
+                    <p>
+                        <p>Observations</p>
+                        <textarea id="Observaciones" name="Observaciones"
+                        onkeyup="javascript:this.value=this.value.toUpperCase();"
+                       
+                    ></textarea><!--"overflow: scroll; resize: none;-->
+                    </p>
+
+                    <p><button name="btn_guardar" class="btn_guardar"><b>Save</b></button></p>
+
+                </form>
+            </div>
+
+        </div>
+
+        <div id="footer">
+             <h2 style="border-bottom: 3px solid black;"> Garden of Eden Project </h2>
+           
+             <ol>
+                 <li>
+                    <p>Jose Correa Morales </p> 
+                 </li>
+                  <li><p>Jose Octavio Palacio Flores</p> </li>
+            <li>  <p>Josue Guadalupe González Colin</p></li>
+             </ol>
+            
+            
+           
+        </div>
+
+    </div>
+    <script src="js/validarIngles.js"></script>
+</body>
+
+</html>

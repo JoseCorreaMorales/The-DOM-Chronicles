@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>21_2075cProWebT3Practica3CorreaJose</title>
+    <link rel="stylesheet" href="css/Estilos.css">
+    <style>
+          pre {
+            background-color: rgb(236, 255, 227);
+            color: rgb(2, 73, 0);
+            padding: 10px;
+        }
+
+        .topnav {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .topnav a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .topnav a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .topnav2 {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 200px;
+            background-color: #f1f1f1;
+        }
+
+        .topnav2 a {
+            display: block;
+            color: #000;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        .topnav2 a.active {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        .topnav2 a:hover:not(.active) {
+            background-color: #555;
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>21_2075cProWebT3Practica3CorreaJose</h1>
+        </div>
+
+        <div id="content">
+            <div id="section">
+                <h2>Barra de navegación superior</h2>
+
+                <h3>Lista común</h3>
+                <p>usando &lt;ul&gt; &lt;li&gt; &lt;a&gt;</p>
+
+                <ul>
+                    <li><a href="
+                        #home" class="active">Inicio</a></li>
+                    <li><a href="#news">Noticias</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#about">Sobre..</a></li>
+                </ul>
+
+                <h3>Navegación horizontal</h3>
+
+                <p>Utilice la clase Topnav</p>
+
+                <pre>
+            &lt; ul class="topnav" &gt;</pre>
+
+                <pre>
+            &lt;li &gt;a href="home" class="active" &gt; Home &lt; /a&gt;&lt;/li&gt;
+             &lt;li&gt;&lt; a href="#news" > News &Lt;/a&gt;&lt;/li &gt;
+            </pre>
+
+                <p>Usa los estilos CSS</p>
+
+                <pre>
+                    .topnav {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        background-color: #333;
+                    }
+            
+                    .topnav a {
+                        float: left;
+                        display: block;
+                        color: #f2f2f2;
+                        text-align: center;
+                        padding: 14px 16px;
+                        text-decoration: none;
+                        font-size: 17px;
+                    }
+            
+                    .topnav a:hover {
+                        background-color: #ddd;
+                        color: black;
+                    }
+            
+                    .topnav a.active {
+                        background-color: #4CAF50;
+                        color: white;
+                    } 
+            </pre>
+
+                <p>Resultado </p>
+
+                <ul class="topnav">
+                    <li><a href="#home" class="active">Inicio</a></li>
+                    <li><a href="#news">Noticias</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#about">Sobre..</a></li>
+                </ul>
+
+                <h3>Navegación vertical</h3>
+
+                <p>Usar navegación horizontal</p>
+
+                <pre>&Lt; ul class="topnav2&gt;</pre>
+
+                <p>Utilice la marca "a" en los enlaces</p>
+
+                <pre>
+                    &lt;li&gt;&lt; a href="#home" class="active" &gt; Home&lt;/a&gt;&lt;/li&gt;
+                    &lt;li&gt;&lt; a href="#news" class="active" &gt; News&lt;/a&gt;&lt;/li&gt; 
+                </pre>
+
+                <p>Usar los estilos CSS</p>
+
+                <pre>
+                    .topnav2 {
+                        list-style-type: none;
+                        margin: 0;
+                        padding: 0;
+                        width: 200px;
+                        background-color: #f1f1f1;
+                    }
+            
+                    .topnav2 a {
+                        display: block;
+                        color: #000;
+                        padding: 8px 16px;
+                        text-decoration: none;
+                    }
+            
+                    .topnav2 a.active {
+                        background-color: #4CAF50;
+                        color: white;
+                    }
+
+                    .topnav2 a:hover:not(.active) {
+                     background-color: #555;
+                     color: white;
+        }
+                </pre>
+
+                <p>Resultado</p>
+
+                <ul class="topnav2">
+                    <li><a href="#home" class="active">Inicio</a></li>
+                    <li><a href="#news">Noticias</a></li>
+                    <li><a href="#contact">Contacto</a></li>
+                    <li><a href="#about">Sobre..</a></li>
+                </ul>
+
+            </div>
+
+            <div id="sidebar">
+                <h2 class="conclusions">Conclusiones particulares</h2>
+                <hr>
+            </div>
+        </div>
+        <div id="footer">
+            <h2> Instituto Tecnológico Superior de Ciudad Hidalgo </h2>
+             <p> <b> Semestre </b> Agosto diciembre 2021 </p>
+             <p> <b> Materia </b> Programación Web </p>
+             <p> <b> Grupo </b> 075c </p>
+             <p> <b> Profesor </b> Erik Augusto Ramirez Vargas </p>
+             <p> <b> Alumno </b> Jose Correa Morales </p>
+        </div>
+    </div>
+</body>
+
+</html>

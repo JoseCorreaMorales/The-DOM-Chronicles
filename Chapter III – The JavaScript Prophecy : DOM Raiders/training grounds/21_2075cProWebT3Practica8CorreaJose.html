@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>Inventario - Agregar jardinera</title>
+
+    <link rel="stylesheet" href="css/Estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>21_2075cProWebT3Practica8CorreaJose</h1>
+            <ul class="topnav">
+                <li><a href="21_2075cProWebT3Practica5CorreaJose.html">Prac5</a></li>
+                <li><a href="21_2075cProWebT3Practica6CorreaJose.html">Prac6</a></li>
+                <li><a href="21_2075cProWebT3Practica7CorreaJose.html">Prac7</a></li>
+                <li><a href="21_2075cProWebT3Practica8CorreaJose.html">Prac8</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="section">      
+                <form id="form1" name="form1" method="post" action="#" onsubmit="return validarForm(this);">
+
+                    <h3>TEXTO Mayúscula, no nula y sin espacios</h3>
+                    <p><label for="text_Name">Name </label><br>
+                        <input type="text" name="text_Name" id="txt_Name" 
+                        onkeyup="javascript:this.value=this.value.toUpperCase();">
+                    </p>
+
+                    <h3>NUMERO isNaN</h3>
+                    <p><label for="txt_Age">Edad </label><br>
+                        <input type="text" name="txt_Age" id="txt_Age">
+                    </p>
+
+                    <h3>RADIOBUTTON uno seleccionado</h3>
+                    <p><input type="radio" id="rad_Male" name="rad_Sex" value="rad_Male">
+                        <label for="rad_Male">Masculino</label><br>
+
+                        <input type="radio" id="rad_Female" name="rad_Sex" value="rad_Female">
+                        <label for="rad_Female">Femenino</label>
+                    </p>
+
+                    <h3>números de teléfono 9 NÚMEROS </h3>
+                    <p><label for="txt_Telephone">Telefono</label><br>
+                        <input type="text" name="txt_Telephone" id="txt_Telephone">
+                    </p>
+
+                    <h3>LISTA</h3>
+                    <p>
+                        <label for="lst_MaritalEstatus">Estado civil</label><br>
+                        <select name="lst_MaritalEstatus" id="lst_MaritalEstatus">
+                            <option>Seleccione..</option>
+                            <option>Casado</option>
+                            <option>Soltero</option>
+                        </select>
+                    </p>
+
+                    <h3>Casilla de verifiación - CHECK</h3>
+                    <P>
+                        Seleccione 2 colores <br>
+                        <input type="checkbox" id="color1" name="color1" value="Red">
+                        <label for="color1">Rojo</label><br>
+
+                        <input type="checkbox" id="color2" name="color2" value="Blue">
+                        <label for="color2">Azul</label><br>
+
+                        <input type="checkbox" id="color3" name="color3" value="Green">
+                        <label for="color3">Verde</label>
+                    </P>
+
+                    <h3>CORREO Minúscula, no nulo y sin espacio</h3>
+
+                    <p><label for="txt_Mail">Correo</label><br>
+                        <input type="text" name="txt_Mail" id="txt_Mail"
+                            onkeyup="javascript:this.value=this.value.toLowerCase();">
+                    </p>
+                    <p><button name="btn_guardar" id="btn_guardar">Guardar</button></p>
+
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+             <h2> Instituto Tecnológico Superior de Ciudad Hidalgo </h2>
+            <p> <b> Semestre </b> Agosto Diciembre 2020 </p>
+            <p> <b> Materia </b> Programación web </p>
+            <p> <b> Grupo </b> 075c </p>
+            <p> <b> Profesor </b> Erik Augusto Ramirez Vargas </p>
+            <p> <b> Estudiante </b> Jose Correa Morales </p>
+        </div>
+
+    </div>
+    <script src="js/ejercicio8.js"></script>
+</body>
+
+</html>

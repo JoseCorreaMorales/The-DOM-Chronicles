@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+    <title>21_2075cProWebT3Ejercicio8CorreaJose</title>
+
+    <link rel="stylesheet" href="css/Estilos.css">
+    <link rel="stylesheet" href="css/menu.css">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>20_2075cProWebT3Ejercicio8CorreaJose</h1>
+            <ul class="topnav">
+                <li><a href="21_2075cProWebT3Ejercicio5CorreaJose.html">Ejer5</a></li>
+                <li><a href="21_2075cProWebT3Ejercicio6CorreaJose.html">Ejer6</a></li>
+                <li><a href="21_2075cProWebT3Ejercicio7CorreaJose.html">Ejer7</a></li>
+                <li><a href="21_2075cProWebT3Ejercicio8CorreaJose.html">Ejer8</a></li>
+            </ul>
+        </div>
+        <div id="content">
+            <div id="section">
+                <h2>Input validation</h2>
+                <form id="form1" name="form1" method="post" action="#" onsubmit="return validarForm(this);">
+                    <h3>TEXT Uppercase, not null and without space</h3>
+                    <p><label for="text_Name">Name </label><br>
+                        <input type="text" name="text_Name" id="txt_Name"
+                            onkeyup="javascript:this.value=this.value.toUpperCase();">
+                    </p>
+
+                    <h3>NUMBER isNaN</h3>
+                    <p><label for="txt_Age">Age</label><br>
+                        <input type="text" name="txt_Age" id="txt_Age">
+                    </p>
+
+                    <h3>RADIOBUTTON one checked</h3>
+                    <p><input type="radio" id="rad_Male" name="rad_Sex" value="rad_Male">
+                        <label for="rad_Male">Male</label><br>
+
+                        <input type="radio" id="rad_Female" name="rad_Sex" value="rad_Female">
+                        <label for="rad_Female">Female</label>
+                    </p>
+
+                    <h3>telephone NUMBER 9 numbers</h3>
+                    <p><label for="txt_Telephone">Telephone</label><br>
+                        <input type="text" name="txt_Telephone" id="txt_Telephone">
+                    </p>
+
+                    <h3>LIST</h3>
+                    <p>
+                        <label for="lst_MaritalEstatus">Marital Estatus</label><br>
+                        <select name="lst_MaritalEstatus" id="lst_MaritalEstatus">
+                            <option>Select..</option>
+                            <option>Married</option>
+                            <option>Single</option>
+                        </select>
+                    </p>
+
+                    <h3>CHECK</h3>
+                    <P>
+                        select 2 colors <br>
+                        <input type="checkbox" id="color1" name="color1" value="Red">
+                        <label for="color1">Red</label><br>
+
+                        <input type="checkbox" id="color2" name="color2" value="Blue">
+                        <label for="color2">Blue</label><br>
+
+                        <input type="checkbox" id="color3" name="color3" value="Green">
+                        <label for="color3">Green</label>
+                    </P>
+
+                    <h3>MAIL LowerCase, not null and without space</h3>
+
+                    <p><label for="txt_Mail">Mail</label><br>
+                        <input type="text" name="txt_Mail" id="txt_Mail"
+                            onkeyup="javascript:this.value=this.value.toLowerCase();">
+                    </p>
+                    <p><button name="btn_guardar" id="btn_guardar">Save</button></p>
+
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <h2> Higher Technological Institute of Ciudad Hidalgo </h2>
+            <p> <b> Semester </b> August December 2020 </p>
+            <p> <b> Subject </b> Web Programming </p>
+            <p> <b> Group </b> 075c </p>
+            <p> <b> Professor </b> Erik Augusto Ramirez Vargas </p>
+            <p> <b> Student </b> Jose Correa Morales </p>
+        </div>
+
+    </div>
+    <script src="js/ejercicio8.js"></script>
+</body>
+
+</html>
