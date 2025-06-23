@@ -1,0 +1,40 @@
+.container {
+    background-color: rebeccapurple;
+    border: 4px solid pink;
+    display: grid;
+    gap: 1.5rem;
+    margin-bottom: 15%;
+}
+
+.container-1 {
+    grid-template-columns: minmax(60px, 300px) 200px minmax(60px, 250px);
+    grid-template-rows: repeat(3, auto);
+}
+
+
+.container-2 {
+    grid-template-columns: repeat(4, 2fr);
+}
+
+.container-3 {
+    grid-template-columns: 2fr 1fr min-content max-content;
+}
+
+
+.container-4 {
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+.container-5 {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.container:last-child {
+    margin-bottom: 0;
+}
+
+.item {
+    font-size: 3rem;
+    border: 3px solid darkgoldenrod;
+    background-color: lightblue;
+}

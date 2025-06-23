@@ -1,0 +1,38 @@
+/*  */
+/* .container {
+    position: relative;
+    background-color: lightpink;
+    border: 4px solid pink;
+    display: grid;
+   grid-template-columns: 100px 200px 300px; se definen 3 colunmas, y el ancho
+    grid-template-rows: 150px 250px; se definen dos renglones y el alto
+    grid-auto-rows: 150px; de esta manera todos los renglones tendran 150 de alto
+} */
+
+
+/* por defecto grid empiza por las columnas, es decir:
+
+    1   2   3
+    4   5   5
+
+    pero con grid auto flow se empieza a llenar por las filas
+
+    1   3   5
+    2   4   6
+*/
+.container {
+    background-color: lightpink;
+    border: 4px solid pink;
+    display: grid;
+    grid-template-rows: 100px 200px;
+    grid-auto-columns: 100px;
+    grid-auto-flow: column;
+    gap: 1.5rem;
+    row-gap: 3rem;
+}
+
+.item {
+    font-size: 4rem;
+    border: 3px solid lightseagreen;
+    background-color: lightblue;
+}

@@ -1,0 +1,61 @@
+/* 
+one =    background-color: green;
+two =    background-color: rgb(87, 140, 9);
+three = background-color: greenyellow; */
+::root {}
+
+.container {
+    background-color: wheat;
+    border: .5rem black;
+    box-shadow: .5rem 1rem 1rem rgba(0 0 0 / .3);
+    height: 100vh;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    /* not recomended use absolute meassures (px) instead use the relative ones (%, rem, fr,etc) */
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+    "three      two     two"
+    "one        one     three"
+    "three      two     one"
+    ;
+}
+
+.item {
+    border: .3rem lightyellow solid;
+    font-size: 3.5rem;
+}
+
+/* items */
+.item-1{
+    background-color: greenyellow; 
+    text-align: center;
+}
+
+.item-2{
+    background-color: rgb(87, 140, 9);
+    grid-column-start: 2;
+    grid-column-end: 4;
+}
+
+.item-3{
+    background-color: green;
+    /*shortand: row start / col start / row end / col end  */
+    grid-area: 2 / 1 / 2 / 3;
+}
+
+.item-4{
+    background-color: greenyellow;;
+}
+
+.item-5{
+    background-color: greenyellow;;
+}
+
+.item-6{
+    background-color: rgb(87, 140, 9);
+}
+
+.item-7{
+    background-color: green;
+}
